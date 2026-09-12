@@ -1,0 +1,64 @@
+cmake:
+  application:
+    configuration-dir: '/home/khaiwic/Zephyr_Prj/Blink_led'
+    source-dir: '/home/khaiwic/Zephyr_Prj/Blink_led'
+  board:
+    name: 'stm32_min_dev'
+    path:
+     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev'
+    qualifiers: 'stm32f103x8'
+    revision: 'blue'
+  devicetree:
+    bindings-dirs:
+     - '/home/khaiwic/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts'
+     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_stm32f103x8_blue.overlay'
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay'
+    include-dirs:
+     - '/home/khaiwic/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/atmel/include'
+     - '/home/khaiwic/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/khaiwic/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/khaiwic/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/khaiwic/zephyrproject/modules/hal/infineon/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/microchip/include'
+     - '/home/khaiwic/zephyrproject/modules/hal/microchip/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/nxp/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/stm32/dts'
+     - '/home/khaiwic/zephyrproject/modules/hal/ti/dts'
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/include'
+     - '/home/khaiwic/zephyrproject/zephyr/include'
+     - '/home/khaiwic/zephyrproject/zephyr/include/zephyr'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/common'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/vendor'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/rx'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/x86'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/xtensa'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/sparc'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/riscv'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/posix'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/arm64'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/arm'
+     - '/home/khaiwic/zephyrproject/zephyr/dts/arc'
+     - '/home/khaiwic/zephyrproject/zephyr/dts'
+    user-files:
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay'
+  kconfig:
+    files:
+     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig'
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/prj.conf'
+    user-files:
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/khaiwic/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/khaiwic/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/khaiwic/zephyrproject/.venv/bin/west build -p always -b stm32_min_dev@blue'
+  topdir: '/home/khaiwic/zephyrproject'
+  version: '1.5.0'
