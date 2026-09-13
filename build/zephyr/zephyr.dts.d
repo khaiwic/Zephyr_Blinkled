@@ -1,19 +1,11 @@
 empty_file.o: /home/khaiwic/zephyrproject/zephyr/misc/empty_file.c \
- /home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts \
- /home/khaiwic/zephyrproject/zephyr/dts/arm/st/f1/stm32f103X8.dtsi \
- /home/khaiwic/zephyrproject/zephyr/dts/arm/st/f1/stm32f103X6.dtsi \
- /home/khaiwic/zephyrproject/zephyr/dts/arm/st/f1/stm32f1.dtsi \
- /home/khaiwic/zephyrproject/zephyr/dts/arm/armv7-m.dtsi \
+ /home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts \
+ /home/khaiwic/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_wroom_n8.dtsi \
+ /home/khaiwic/zephyrproject/zephyr/dts/xtensa/espressif/esp32s3/esp32s3_common.dtsi \
+ /home/khaiwic/zephyrproject/zephyr/dts/common/mem.h \
+ /home/khaiwic/zephyrproject/zephyr/dts/common/freq.h \
+ /home/khaiwic/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi \
  /home/khaiwic/zephyrproject/zephyr/dts/common/skeleton.dtsi \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/stm32f1_clock.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/stm32_common_clocks.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/stm32_pwm.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/dma/stm32_dma.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/reset/stm32f0_1_3_reset.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/reset/stm32-common.h \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/sys/util_macro.h \
@@ -24,13 +16,16 @@ empty_file.o: /home/khaiwic/zephyrproject/zephyr/misc/empty_file.c \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h \
  /home/khaiwic/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/power/stm32_pwr.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/sensor/qdec_stm32.h \
- /home/khaiwic/zephyrproject/zephyr/dts/common/freq.h \
- /home/khaiwic/zephyrproject/zephyr/dts/common/mem.h \
- /home/khaiwic/zephyrproject/modules/hal/stm32/dts/st/f1/stm32f103r(8-b)tx-pinctrl.dtsi \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/stm32f1-pinctrl.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/stm32-pinctrl-common.h \
- /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/stm32f1-afio.h \
- /home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_stm32f103x8_blue.overlay \
- /home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32s3_clock.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp32s3-xtensa-intmux.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-pinctrl.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32s3-gpio-sigmap.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /home/khaiwic/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h \
+ /home/khaiwic/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp.dtsi \
+ /home/khaiwic/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x0_amp_4M.dtsi \
+ /home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc-pinctrl.dtsi \
+ /home/khaiwic/Zephyr_Prj/Blink_led/boards/esp32s3_devkitc_esp32s3_procpu.overlay

@@ -3,7 +3,7 @@
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/arch/Kconfig
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/boards/Kconfig
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/boards/Kconfig.defconfig
-/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/boards/Kconfig.stm32_min_dev
+/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/boards/Kconfig.esp32s3_devkitc
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/soc/Kconfig
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/soc/Kconfig.defconfig
 /home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/soc/Kconfig.soc
@@ -132,7 +132,8 @@
 /home/khaiwic/zephyrproject/zephyr/boards/Kconfig
 /home/khaiwic/zephyrproject/zephyr/boards/Kconfig.v2
 /home/khaiwic/zephyrproject/zephyr/boards/Kconfig.whisper
-/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/Kconfig.stm32_min_dev
+/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/Kconfig
+/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/Kconfig.esp32s3_devkitc
 /home/khaiwic/zephyrproject/zephyr/boards/shields/abrobot_esp32c3_oled/Kconfig.shield
 /home/khaiwic/zephyrproject/zephyr/boards/shields/ad_apardpfw_sl/Kconfig.defconfig
 /home/khaiwic/zephyrproject/zephyr/boards/shields/ad_apardpfw_sl/Kconfig.shield

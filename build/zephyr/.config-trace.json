@@ -1,35 +1,211 @@
 [
   [
-    "CONFIG_DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED",
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_AES_ENABLED",
     "n",
     "bool",
     "y",
     "default",
     [
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      1293
+      3148
     ]
   ],
   [
-    "CONFIG_DT_HAS_ARM_CORTEX_M3_ENABLED",
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_BT_HCI_ENABLED",
     "n",
     "bool",
     "y",
     "default",
     [
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      1448
+      3158
     ]
   ],
   [
-    "CONFIG_DT_HAS_ARM_V7M_NVIC_ENABLED",
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_CLOCK_ENABLED",
     "n",
     "bool",
     "y",
     "default",
     [
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      1758
+      3163
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_FLASH_CONTROLLER_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3183
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_GPIO_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3193
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_INTC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3213
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_LCD_CAM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3223
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_PINCTRL_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3263
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_PSRAM_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3268
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_SDHC_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3288
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_SHA_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3298
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_SPI_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3303
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_TRNG_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3328
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_UART_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3343
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_USB_OTG_FS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3348
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_WATCHDOG_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3363
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_ESP32_WIFI_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3368
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_ESPRESSIF_XTENSA_LX7_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3393
+    ]
+  ],
+  [
+    "CONFIG_DT_HAS_GPIO_KEYS_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      3743
     ]
   ],
   [
@@ -55,6 +231,17 @@
     ]
   ],
   [
+    "CONFIG_DT_HAS_SNPS_DWC2_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
+      13998
+    ]
+  ],
+  [
     "CONFIG_DT_HAS_SOC_NV_FLASH_ENABLED",
     "n",
     "bool",
@@ -66,234 +253,14 @@
     ]
   ],
   [
-    "CONFIG_DT_HAS_ST_STM32_ADC_ENABLED",
+    "CONFIG_DT_HAS_ZEPHYR_MAPPED_PARTITION_ENABLED",
     "n",
     "bool",
     "y",
     "default",
     [
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14508
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_EXTI_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14653
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_FLASH_CONTROLLER_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14663
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_GPIO_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14688
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_HSE_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14698
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_I2C_V1_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14713
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_NV_FLASH_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14793
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_PWM_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14843
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_PWR_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14848
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_RCC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14878
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_RCC_RCTL_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14883
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_SPI_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14918
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_TIMERS_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14948
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_UART_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14958
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_USART_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14968
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32_USB_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      14973
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F1_ADC_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      15078
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F1_FLASH_CONTROLLER_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      15088
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F1_PINCTRL_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      15093
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_ST_STM32F1_PLL_CLOCK_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      15098
-    ]
-  ],
-  [
-    "CONFIG_DT_HAS_USB_NOP_XCEIV_ENABLED",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.dts",
-      17123
+      18608
     ]
   ],
   [
@@ -338,11 +305,11 @@
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
-    "1024",
+    "4096",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/kernel/Kconfig",
-      145
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.defconfig",
+      17
     ]
   ],
   [
@@ -389,14 +356,22 @@
     null
   ],
   [
+    "CONFIG_FPU",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_GPIO",
     "y",
     "bool",
     "y",
     "assign",
     [
-      "/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig",
-      15
+      "/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu_defconfig",
+      6
     ]
   ],
   [
@@ -406,8 +381,8 @@
     "y",
     "assign",
     [
-      "/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig",
-      8
+      "/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu_defconfig",
+      4
     ]
   ],
   [
@@ -451,47 +426,36 @@
     null
   ],
   [
-    "CONFIG_NUM_IRQS",
-    "n",
-    "int",
-    "41",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      30
-    ]
-  ],
-  [
     "CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC",
     "y",
     "int",
-    "72000000",
+    "240000000",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      99
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
+      88
     ]
   ],
   [
-    "CONFIG_FLASH_SIZE",
+    "CONFIG_DCACHE_LINE_SIZE",
     "y",
     "int",
-    "64",
+    "16",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
-      314
+      1375
     ]
   ],
   [
-    "CONFIG_FLASH_BASE_ADDRESS",
+    "CONFIG_CACHE_MANAGEMENT",
     "y",
-    "hex",
-    "0x8000000",
+    "bool",
+    "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      143
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.defconfig",
+      7
     ]
   ],
   [
@@ -510,21 +474,20 @@
     "y",
     "bool",
     "y",
-    "default",
+    "select",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      18
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
     "CONFIG_IDLE_STACK_SIZE",
     "y",
     "int",
-    "256",
+    "1024",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/kernel/Kconfig",
-      160
+      156
     ]
   ],
   [
@@ -583,32 +546,12 @@
     ]
   ],
   [
-    "CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS",
+    "CONFIG_XIP",
     "y",
     "bool",
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_XIP",
-    "y",
-    "bool",
-    "y",
-    "imply",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_HAS_FLASH_LOAD_OFFSET",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
   ],
   [
     "CONFIG_COUNTER",
@@ -625,36 +568,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_STM32CUBE_SOC_NAME_OVERRIDE",
-    "n",
-    "string",
-    "stm32f103xb",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/stm32f1x/Kconfig.defconfig",
-      13
-    ]
-  ],
-  [
-    "CONFIG_SRAM_VECTOR_TABLE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_STM32_FLASH_PREFETCH",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig",
-      42
-    ]
   ],
   [
     "CONFIG_PM_DEVICE",
@@ -692,25 +605,14 @@
     ]
   ],
   [
-    "CONFIG_CORTEX_M_SYSTICK",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/timer/Kconfig.cortex_m_systick",
-      9
-    ]
-  ],
-  [
     "CONFIG_CLOCK_CONTROL_INIT_PRIORITY",
     "y",
     "int",
-    "1",
+    "30",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      130
+      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig",
+      21
     ]
   ],
   [
@@ -722,15 +624,12 @@
     null
   ],
   [
-    "CONFIG_STM32_BACKUP_PROTECTION",
+    "CONFIG_DYNAMIC_THREAD",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      165
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_MULTI_LEVEL_INTERRUPTS",
@@ -741,15 +640,18 @@
     null
   ],
   [
-    "CONFIG_PM",
-    "y",
+    "CONFIG_HARVARD",
+    "n",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
+      67
+    ]
   ],
   [
-    "CONFIG_ZERO_LATENCY_IRQS",
+    "CONFIG_PM",
     "y",
     "bool",
     null,
@@ -790,30 +692,27 @@
     "CONFIG_BUILD_OUTPUT_HEX",
     "y",
     "bool",
-    "y",
-    "select",
-    [
-      "SOC_FAMILY_STM32"
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_GEN_IRQ_VECTOR_TABLE",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
-      603
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_DYNAMIC_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
+    ]
   ],
   [
     "CONFIG_GEN_ISR_TABLES",
@@ -822,8 +721,8 @@
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/cortex_m/Kconfig",
-      329
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
+      76
     ]
   ],
   [
@@ -868,14 +767,6 @@
     ]
   ],
   [
-    "CONFIG_INIT_ARCH_HW_AT_BOOT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_BUILD_OUTPUT_S19",
     "y",
     "bool",
@@ -884,31 +775,23 @@
     null
   ],
   [
-    "CONFIG_ROMSTART_RELOCATION_ROM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_RESET_INIT_PRIORITY",
-    "y",
-    "int",
-    "35",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/reset/Kconfig",
-      21
-    ]
-  ],
-  [
     "CONFIG_TIMER_READS_ITS_FREQUENCY_AT_RUNTIME",
     "y",
     "bool",
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_DCACHE",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
+      1311
+    ]
   ],
   [
     "CONFIG_FLASH",
@@ -930,11 +813,17 @@
     "CONFIG_RESET",
     "y",
     "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_SYSTEM_TIMER_RESET_BY_LPM",
     "y",
-    "select",
-    [
-      "UART_STM32 && DT_HAS_ST_STM32_UART_ENABLED && SERIAL"
-    ]
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_WUC",
@@ -961,20 +850,37 @@
     null
   ],
   [
-    "CONFIG_CODE_DATA_RELOCATION_SRAM",
+    "CONFIG_XTENSA_TIMER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
+      10
+    ]
+  ],
+  [
+    "CONFIG_XTENSA_CCOUNT_HZ",
+    "y",
+    "int",
+    "240000000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
+      91
+    ]
   ],
   [
     "CONFIG_CACHE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/cache/Kconfig",
+      6
+    ]
   ],
   [
     "CONFIG_LOG",
@@ -1047,14 +953,20 @@
     null
   ],
   [
-    "CONFIG_SOC_EARLY_INIT_HOOK",
-    "n",
-    "bool",
+    "CONFIG_XTENSA_SMALL_VECTOR_TABLE_ENTRY",
     "y",
-    "select",
-    [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
-    ]
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_USE_CORE_CRT1",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_CONSOLE",
@@ -1063,8 +975,8 @@
     "y",
     "assign",
     [
-      "/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig",
-      11
+      "/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu_defconfig",
+      3
     ]
   ],
   [
@@ -1085,6 +997,25 @@
       "/home/khaiwic/zephyrproject/zephyr/lib/libc/common/Kconfig",
       64
     ]
+  ],
+  [
+    "CONFIG_SOC_TOOLCHAIN_NAME",
+    "n",
+    "string",
+    "espressif_esp32s3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.soc",
+      163
+    ]
+  ],
+  [
+    "CONFIG_XTENSA_RESET_VECTOR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_GEN_SW_ISR_TABLE",
@@ -1128,25 +1059,44 @@
     ]
   ],
   [
-    "CONFIG_ARCH_IRQ_VECTOR_TABLE_ALIGN",
+    "CONFIG_SMP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_TIMER_ID",
     "y",
     "int",
-    "4",
+    "0",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
-      615
+      "/home/khaiwic/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
+      18
     ]
   ],
   [
-    "CONFIG_ISR_TABLES_LOCAL_DECLARATION_SUPPORTED",
+    "CONFIG_XTAL_FREQ_HZ",
+    "n",
+    "int",
+    "40000000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      56
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ESP32",
     "n",
     "bool",
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
-      548
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
+      85
     ]
   ],
   [
@@ -1170,7 +1120,7 @@
   ],
   [
     "CONFIG_MULTITHREADING",
-    "y",
+    "n",
     "bool",
     "y",
     "default",
@@ -1274,17 +1224,6 @@
     ]
   ],
   [
-    "CONFIG_HAS_CMSIS_CORE",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "HAS_STM32CUBE && SOC_FAMILY_STM32",
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
     "CONFIG_ZEPHYR_CMSIS_DSP_MODULE",
     "n",
     "bool",
@@ -1315,14 +1254,6 @@
     ]
   ],
   [
-    "CONFIG_CMSIS_NN",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_ZEPHYR_CMSIS_6_MODULE",
     "n",
     "bool",
@@ -1332,24 +1263,6 @@
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.modules",
       29
     ]
-  ],
-  [
-    "CONFIG_HAS_CMSIS_CORE_M",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "HAS_CMSIS_CORE && CPU_CORTEX_M"
-    ]
-  ],
-  [
-    "CONFIG_CMSIS_M_CHECK_DEVICE_DEFINES",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_ZEPHYR_DHARA_MODULE",
@@ -1426,6 +1339,3622 @@
     [
       "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/Kconfig.modules",
       68
+    ]
+  ],
+  [
+    "CONFIG_ESP_PLATFORM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      9
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      8
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      12
+    ]
+  ],
+  [
+    "CONFIG_SOC_MCPWM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      68
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPTIMER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      44
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDMMC_HOST_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      132
+    ]
+  ],
+  [
+    "CONFIG_SOC_BT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      92
+    ]
+  ],
+  [
+    "CONFIG_SOC_PCNT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      16
+    ]
+  ],
+  [
+    "CONFIG_SOC_PHY_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      20
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      24
+    ]
+  ],
+  [
+    "CONFIG_SOC_TWAI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      28
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      128
+    ]
+  ],
+  [
+    "CONFIG_SOC_ULP_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      80
+    ]
+  ],
+  [
+    "CONFIG_SOC_CCOMP_TIMER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      112
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_FAST_MEM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      136
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_SLOW_MEM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      140
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_MEM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      144
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_TIMER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      148
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      160
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCD_I80_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      60
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      164
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      168
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPSPI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      172
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      176
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      180
+    ]
+  ],
+  [
+    "CONFIG_SOC_SUPPORT_COEXISTENCE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      188
+    ]
+  ],
+  [
+    "CONFIG_SOC_AES_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      196
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      200
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      204
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      216
+    ]
+  ],
+  [
+    "CONFIG_SOC_SECURE_BOOT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      220
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SENSOR_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      228
+    ]
+  ],
+  [
+    "CONFIG_SOC_BOD_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      232
+    ]
+  ],
+  [
+    "CONFIG_SOC_ULP_FSM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      84
+    ]
+  ],
+  [
+    "CONFIG_SOC_CLK_TREE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      236
+    ]
+  ],
+  [
+    "CONFIG_SOC_REGI2C_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      240
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPU_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      244
+    ]
+  ],
+  [
+    "CONFIG_SOC_WDT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      248
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_WDT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      252
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_FLASH_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      256
+    ]
+  ],
+  [
+    "CONFIG_SOC_RNG_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      260
+    ]
+  ],
+  [
+    "CONFIG_SOC_LIGHT_SLEEP_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      264
+    ]
+  ],
+  [
+    "CONFIG_SOC_DEEP_SLEEP_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      268
+    ]
+  ],
+  [
+    "CONFIG_SOC_LP_PERIPH_SHARE_INTERRUPT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      272
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      276
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_EXTERNAL_NOR_FLASH_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      284
+    ]
+  ],
+  [
+    "CONFIG_SOC_XTAL_SUPPORT_40M",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      288
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_RTC_CTRL_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      296
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIG_CTRL_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      300
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DMA_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      316
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_PERIPH_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      320
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_ATTEN_NUM",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      324
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_PATT_LEN_MAX",
+    "n",
+    "int",
+    "24",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      328
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIGI_MIN_BITWIDTH",
+    "n",
+    "int",
+    "12",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      332
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIGI_MAX_BITWIDTH",
+    "n",
+    "int",
+    "12",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      336
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIGI_RESULT_BYTES",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      340
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIGI_DATA_BYTES_PER_CONV",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      344
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIGI_MONITOR_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      348
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_SHARED_POWER",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      360
+    ]
+  ],
+  [
+    "CONFIG_SOC_BROWNOUT_RESET_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      368
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_CORES_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      384
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_INTR_NUM",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      388
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_HAS_FPU",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      392
+    ]
+  ],
+  [
+    "CONFIG_SOC_HP_CPU_HAS_MULTIPLE_CORES",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      396
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_BREAKPOINTS_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      400
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_WATCHPOINTS_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      404
+    ]
+  ],
+  [
+    "CONFIG_SOC_CPU_WATCHPOINT_MAX_REGION_SIZE",
+    "n",
+    "hex",
+    "0x40",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      408
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_PORT",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      432
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_PIN_COUNT",
+    "n",
+    "int",
+    "49",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      436
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_SUPPORT_HP_PERIPH_PD_SLEEP_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      472
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_HP_PERIPH_PD_SLEEP_WAKEABLE_MASK",
+    "n",
+    "int",
+    "0",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      476
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_VALID_GPIO_MASK",
+    "n",
+    "hex",
+    "0x1FFFFFFFFFFFF",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      448
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_IN_RANGE_MAX",
+    "n",
+    "int",
+    "48",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      452
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_OUT_RANGE_MAX",
+    "n",
+    "int",
+    "48",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      456
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK",
+    "n",
+    "hex",
+    "0x0001FFFFFC000000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      460
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_CLOCKOUT_BY_IO_MUX",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      464
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_CLOCKOUT_CHANNEL_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      468
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      480
+    ]
+  ],
+  [
+    "CONFIG_SOC_HP_I2C_NUM",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      484
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SUPPORT_10BIT_ADDR",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      496
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SUPPORT_SLAVE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      500
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PDM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      520
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PDM_TX",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      524
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PCM2PDM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      528
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PDM_RX",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      532
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PDM2PCM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      536
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_PDM_MAX_TX_LINES",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      540
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_PDM_MAX_RX_LINES",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      544
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_SUPPORT_APB_CLOCK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      552
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_TIMER_NUM",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      560
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_CHANNEL_NUM",
+    "n",
+    "int",
+    "8",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      564
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_TIMER_BIT_WIDTH",
+    "n",
+    "int",
+    "14",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      568
+    ]
+  ],
+  [
+    "CONFIG_SOC_MMU_PERIPH_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      584
+    ]
+  ],
+  [
+    "CONFIG_SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      580
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPU_MIN_REGION_SIZE",
+    "n",
+    "hex",
+    "0x20000000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      592
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPU_REGIONS_MAX_NUM",
+    "n",
+    "int",
+    "8",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      596
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_MEM_WORDS_PER_CHANNEL",
+    "n",
+    "int",
+    "48",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      608
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTCIO_PIN_COUNT",
+    "n",
+    "int",
+    "22",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      644
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      648
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTCIO_HOLD_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      652
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTCIO_WAKE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      656
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_CNTL_NEEDS_ATOMIC_ACCESS",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      640
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_PERIPH_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      664
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MAXIMUM_BUFFER_SIZE",
+    "n",
+    "int",
+    "64",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      668
+    ]
+  ],
+  [
+    "CONFIG_SOC_LP_TIMER_BIT_WIDTH_LO",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      688
+    ]
+  ],
+  [
+    "CONFIG_SOC_LP_TIMER_BIT_WIDTH_HI",
+    "n",
+    "int",
+    "16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      692
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_TIMER_V1",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      696
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SENSOR_VERSION",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      700
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_MIN_CHAN_ID",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      704
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_MAX_CHAN_ID",
+    "n",
+    "int",
+    "14",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      708
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SUPPORT_SLEEP_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      716
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SAMPLE_CFG_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      736
+    ]
+  ],
+  [
+    "CONFIG_SOC_TWAI_CONTROLLER_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      740
+    ]
+  ],
+  [
+    "CONFIG_SOC_TWAI_MASK_FILTER_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      744
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      748
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_HP_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      752
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_SUPPORT_APB_CLK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      768
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_FIFO_LEN",
+    "n",
+    "int",
+    "128",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      756
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_BITRATE_MAX",
+    "n",
+    "int",
+    "5000000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      760
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      780
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPIRAM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      680
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1084
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMSPI_ENCRYPTION_ALIGNMENT",
+    "n",
+    "int",
+    "16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1116
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA1",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      808
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      816
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA384",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      820
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA512",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      824
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPI_MEM_BLOCKS_NUM",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      840
+    ]
+  ],
+  [
+    "CONFIG_SOC_MPI_OPERATIONS_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      844
+    ]
+  ],
+  [
+    "CONFIG_SOC_RSA_MAX_BIT_LEN",
+    "n",
+    "int",
+    "4096",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      848
+    ]
+  ],
+  [
+    "CONFIG_SOC_AES_SUPPORT_AES_128",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      860
+    ]
+  ],
+  [
+    "CONFIG_SOC_AES_SUPPORT_AES_256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      864
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1008
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX",
+    "n",
+    "int",
+    "64",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1020
+    ]
+  ],
+  [
+    "CONFIG_SOC_PHY_DIG_REGS_MEM_SIZE",
+    "n",
+    "int",
+    "21",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1048
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_EXT0_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      868
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_EXT1_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      872
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_EXT_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      876
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      888
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_RTC_PERIPH_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      900
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_RC_FAST_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      904
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_VDDSDIO_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      908
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_MODEM_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      916
+    ]
+  ],
+  [
+    "CONFIG_SOC_CONFIGURABLE_VDDSDIO_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      920
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_MODEM_PD_BY_SW",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      936
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_RTC_NOT_SUPPORT_UART2_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      940
+    ]
+  ],
+  [
+    "CONFIG_SOC_CLK_RC_FAST_D256_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      944
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      948
+    ]
+  ],
+  [
+    "CONFIG_SOC_CLK_RC_FAST_SUPPORT_CALIBRATION",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      952
+    ]
+  ],
+  [
+    "CONFIG_SOC_CLK_XTAL32K_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      956
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDMMC_NUM_SLOTS",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1136
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDMMC_DATA_WIDTH_MAX",
+    "n",
+    "int",
+    "8",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1140
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_WAPI_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1164
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_CSI_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1172
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_MESH_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1176
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1180
+    ]
+  ],
+  [
+    "CONFIG_SOC_BLE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1188
+    ]
+  ],
+  [
+    "CONFIG_SOC_BLE_MESH_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1192
+    ]
+  ],
+  [
+    "CONFIG_SOC_BLE_DEVICE_PRIVACY_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1200
+    ]
+  ],
+  [
+    "CONFIG_SOC_BLUFI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1204
+    ]
+  ],
+  [
+    "CONFIG_SOC_ULP_HAS_ADC",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1208
+    ]
+  ],
+  [
+    "CONFIG_SOC_PHY_COMBO_MODULE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1212
+    ]
+  ],
+  [
+    "CONFIG_SOC_DEDICATED_GPIO_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      72
+    ]
+  ],
+  [
+    "CONFIG_SOC_SUPPORTS_SECURE_DL_MODE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      120
+    ]
+  ],
+  [
+    "CONFIG_SOC_RISCV_COPROC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      88
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_OTG_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      96
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_DFU_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      100
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_OTG_CONSOLE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      104
+    ]
+  ],
+  [
+    "CONFIG_SOC_ASYNC_MEMCPY_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      116
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_KEY_PURPOSE_FIELD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      124
+    ]
+  ],
+  [
+    "CONFIG_SOC_TEMP_SENSOR_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      192
+    ]
+  ],
+  [
+    "CONFIG_SOC_CACHE_SUPPORT_WRAP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      76
+    ]
+  ],
+  [
+    "CONFIG_SOC_PSRAM_DMA_CAPABLE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      152
+    ]
+  ],
+  [
+    "CONFIG_SOC_XT_WDT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      156
+    ]
+  ],
+  [
+    "CONFIG_SOC_SYSTIMER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      184
+    ]
+  ],
+  [
+    "CONFIG_SOC_HMAC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      208
+    ]
+  ],
+  [
+    "CONFIG_SOC_DIG_SIGN_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      212
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMPROT_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      224
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_ARBITER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      304
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_DIG_IIR_FILTER_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      308
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_MONITOR_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      312
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_CALIBRATION_V1_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      352
+    ]
+  ],
+  [
+    "CONFIG_SOC_ADC_SELF_HW_CALI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      356
+    ]
+  ],
+  [
+    "CONFIG_SOC_CACHE_WRITEBACK_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      372
+    ]
+  ],
+  [
+    "CONFIG_SOC_DS_SIGNATURE_MAX_BIT_LEN",
+    "n",
+    "int",
+    "4096",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      416
+    ]
+  ],
+  [
+    "CONFIG_SOC_DS_KEY_PARAM_MD_IV_LENGTH",
+    "n",
+    "int",
+    "16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      420
+    ]
+  ],
+  [
+    "CONFIG_SOC_DS_KEY_CHECK_MAX_WAIT_US",
+    "n",
+    "int",
+    "1100",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      424
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      440
+    ]
+  ],
+  [
+    "CONFIG_SOC_GPIO_SUPPORT_FORCE_HOLD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      444
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      508
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_SUPPORT_XTAL_CLOCK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      556
+    ]
+  ],
+  [
+    "CONFIG_SOC_LEDC_SUPPORT_FADE_STOP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      572
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_SUPPORT_TX_LOOP_COUNT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      616
+    ]
+  ],
+  [
+    "CONFIG_SOC_LP_IO_CLOCK_IS_INDEPENDENT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      660
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_SUPPORT_SLAVE_HD_VER2",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      672
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_SUPPORT_OCT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      676
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMSPI_SUPPORT_CONTROL_DUMMY_OUT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1108
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMSPI_IS_INDEPENDENT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1112
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SUPPORT_BENCHMARK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      712
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SUPPORT_WATERPROOF",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      720
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SUPPORT_PROX_SENSING",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      724
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_SUPPORT_DENOISE_CHAN",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      728
+    ]
+  ],
+  [
+    "CONFIG_SOC_TOUCH_PROXIMITY_CHANNEL_NUM",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      732
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_SUPPORT_WAKEUP_INT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      764
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPIRAM_XIP_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      684
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_OTG_PERIPH_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      784
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_FSLS_PHY_NUM",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      788
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_DMA_MAX_BUFFER_SIZE",
+    "n",
+    "int",
+    "3968",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      792
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_DMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      796
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_RESUME",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      800
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA224",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      812
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA512_224",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      828
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA512_256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      832
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_SUPPORT_SHA512_T",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      836
+    ]
+  ],
+  [
+    "CONFIG_SOC_AES_SUPPORT_DMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      852
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_DIS_DOWNLOAD_ICACHE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      964
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_DIS_DOWNLOAD_DCACHE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      968
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_HARD_DIS_JTAG",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      972
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_SOFT_DIS_JTAG",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      980
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_DIS_ICACHE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      988
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_XTS_AES_KEY_128",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      996
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_XTS_AES_KEY_256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1000
+    ]
+  ],
+  [
+    "CONFIG_SOC_SECURE_BOOT_V2_RSA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1004
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1012
+    ]
+  ],
+  [
+    "CONFIG_SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1016
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1024
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1028
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES_128",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1032
+    ]
+  ],
+  [
+    "CONFIG_SOC_FLASH_ENCRYPTION_XTS_AES_256",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1036
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE",
+    "n",
+    "int",
+    "16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1040
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMPROT_MEM_ALIGN_SIZE",
+    "n",
+    "int",
+    "256",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1044
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH",
+    "n",
+    "int",
+    "12",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1056
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1060
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_SW_SUSPEND",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1072
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_WRAP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1088
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_WIFI_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      880
+    ]
+  ],
+  [
+    "CONFIG_SOC_COEX_HW_PTI",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1120
+    ]
+  ],
+  [
+    "CONFIG_SOC_EXTERNAL_COEX_LEADER_TX_LINE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1128
+    ]
+  ],
+  [
+    "CONFIG_SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1148
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_HW_TSF",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1152
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_FTM_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1156
+    ]
+  ],
+  [
+    "CONFIG_SOC_GDMA_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      32
+    ]
+  ],
+  [
+    "CONFIG_SOC_UHCI_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      36
+    ]
+  ],
+  [
+    "CONFIG_SOC_AHB_GDMA_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      40
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCDCAM_CAM_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      48
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCDCAM_I80_LCD_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      52
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCDCAM_RGB_LCD_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      56
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCD_RGB_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      64
+    ]
+  ],
+  [
+    "CONFIG_SOC_USB_SERIAL_JTAG_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      108
+    ]
+  ],
+  [
+    "CONFIG_SOC_SIMD_INSTRUCTION_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      280
+    ]
+  ],
+  [
+    "CONFIG_SOC_APPCPU_HAS_CLOCK_GATING_BUG",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      292
+    ]
+  ],
+  [
+    "CONFIG_SOC_APB_BACKUP_DMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      364
+    ]
+  ],
+  [
+    "CONFIG_SOC_CACHE_FREEZE_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      376
+    ]
+  ],
+  [
+    "CONFIG_SOC_CACHE_ACS_INVALID_STATE_ON_PANIC",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      380
+    ]
+  ],
+  [
+    "CONFIG_SOC_SIMD_PREFERRED_DATA_ALIGNMENT",
+    "n",
+    "int",
+    "16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      412
+    ]
+  ],
+  [
+    "CONFIG_SOC_AHB_GDMA_VERSION",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      428
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SUPPORT_XTAL",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      488
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SUPPORT_RTC",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      492
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2C_SLAVE_SUPPORT_BROADCAST",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      504
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_HW_VERSION_2",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      512
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_PCM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      516
+    ]
+  ],
+  [
+    "CONFIG_SOC_I2S_SUPPORTS_TDM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      548
+    ]
+  ],
+  [
+    "CONFIG_SOC_MCPWM_SWSYNC_CAN_PROPAGATE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      576
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_SUPPORT_RX_PINGPONG",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      612
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      620
+    ]
+  ],
+  [
+    "CONFIG_SOC_RMT_SUPPORT_DMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      624
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_CNTL_CPU_PD_DMA_BUS_WIDTH",
+    "n",
+    "int",
+    "128",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      628
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_CNTL_CPU_PD_REG_FILE_NUM",
+    "n",
+    "int",
+    "549",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      632
+    ]
+  ],
+  [
+    "CONFIG_SOC_RTC_CNTL_TAGMEM_PD_DMA_BUS_WIDTH",
+    "n",
+    "int",
+    "128",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      636
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_SUPPORT_RTC_CLK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      772
+    ]
+  ],
+  [
+    "CONFIG_SOC_UART_SUPPORT_XTAL_CLK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      776
+    ]
+  ],
+  [
+    "CONFIG_SOC_SHA_GDMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      804
+    ]
+  ],
+  [
+    "CONFIG_SOC_AES_GDMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      856
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_BT_WAKEUP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      884
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_CPU_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      892
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_TAGMEM_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      896
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_MAC_BB_PD",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      912
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      924
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_CPU_RETENTION_BY_RTCCNTL",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      928
+    ]
+  ],
+  [
+    "CONFIG_SOC_PM_MODEM_RETENTION_BY_BACKUPDMA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      932
+    ]
+  ],
+  [
+    "CONFIG_SOC_CLK_LP_FAST_SUPPORT_XTAL_D2",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      960
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_DIS_USB_JTAG",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      976
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_DIS_DIRECT_BOOT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      984
+    ]
+  ],
+  [
+    "CONFIG_SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      992
+    ]
+  ],
+  [
+    "CONFIG_SOC_MAC_BB_PD_MEM_SIZE",
+    "n",
+    "int",
+    "192",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1052
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1064
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_AUTO_RESUME",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1068
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_FLASH_OPI_MODE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1076
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_TIMING_TUNING",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1080
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMSPI_TIMING_TUNING_BY_MSPI_DELAY",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1092
+    ]
+  ],
+  [
+    "CONFIG_SOC_MEMSPI_CORE_CLK_SHARED_WITH_PSRAM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1096
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_SUPPORT_CACHE_32BIT_ADDR_MAP",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1100
+    ]
+  ],
+  [
+    "CONFIG_SOC_SPI_MEM_FLASH_SUPPORT_HPM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1104
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDMMC_USE_GPIO_MATRIX",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1132
+    ]
+  ],
+  [
+    "CONFIG_SOC_SDMMC_DELAY_PHASE_NUM",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1144
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_GCMP_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1160
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_TXOP_SUPPORT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1168
+    ]
+  ],
+  [
+    "CONFIG_SOC_WIFI_PHY_NEEDS_USB_WORKAROUND",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1184
+    ]
+  ],
+  [
+    "CONFIG_SOC_BLE_50_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1196
+    ]
+  ],
+  [
+    "CONFIG_SOC_LCDCAM_CAM_SUPPORT_RGB_YUV_CONV",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/../components/soc/esp32s3/include/soc/Kconfig.soc_caps.in",
+      1216
+    ]
+  ],
+  [
+    "CONFIG_XTAL_FREQ",
+    "n",
+    "int",
+    "40",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      63
+    ]
+  ],
+  [
+    "CONFIG_XTAL_FREQ_40",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      77
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_OFFSET_IN_FLASH",
+    "n",
+    "hex",
+    "0x0",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      85
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_CPU_CLK_FREQ_MHZ",
+    "n",
+    "int",
+    "80",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      92
+    ]
+  ],
+  [
+    "CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ",
+    "n",
+    "int",
+    "240",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      115
+    ]
+  ],
+  [
+    "CONFIG_ESP_TIMER_INTERRUPT_LEVEL",
+    "n",
+    "int",
+    "1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      120
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_LOG_LEVEL",
+    "n",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      126
+    ]
+  ],
+  [
+    "CONFIG_LOG_TIMESTAMP_SOURCE_RTOS",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      130
+    ]
+  ],
+  [
+    "CONFIG_ESP32_DPORT_DIS_INTERRUPT_LVL",
+    "n",
+    "int",
+    "5",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      134
+    ]
+  ],
+  [
+    "CONFIG_ESP_SYSTEM_SINGLE_CORE_MODE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      138
+    ]
+  ],
+  [
+    "CONFIG_IDF_TARGET_ARCH_XTENSA",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      146
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_PLACE_FUNCTIONS_IN_IRAM",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      150
+    ]
+  ],
+  [
+    "CONFIG_ESP_PHY_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      158
+    ]
+  ],
+  [
+    "CONFIG_portNUM_PROCESSORS",
+    "n",
+    "int",
+    "2",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      167
+    ]
+  ],
+  [
+    "CONFIG_IDF_FIRMWARE_CHIP_ID",
+    "n",
+    "hex",
+    "0x0009",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      173
+    ]
+  ],
+  [
+    "CONFIG_SPIRAM_ALLOW_BSS_SEG_EXTERNAL_MEMORY",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      186
+    ]
+  ],
+  [
+    "CONFIG_SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      192
+    ]
+  ],
+  [
+    "CONFIG_IDF_TARGET",
+    "n",
+    "string",
+    "esp32s3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      196
+    ]
+  ],
+  [
+    "CONFIG_PM_SLP_SPIRAM_HALFSLEEP_EXIT_WAIT_DELAY",
+    "n",
+    "int",
+    "150",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      200
+    ]
+  ],
+  [
+    "CONFIG_IDF_TARGET_ESP32S3",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      217
+    ]
+  ],
+  [
+    "CONFIG_ESP_TIMER_IMPL_SYSTIMER",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      254
+    ]
+  ],
+  [
+    "CONFIG_ESP_WIFI_TASK_PINNED_TO_CORE_0",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      262
+    ]
+  ],
+  [
+    "CONFIG_ESP_WIFI_TASK_PINNED_TO_CORE_1",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP_SLEEP_RTC_BUS_ISO_WORKAROUND",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      288
+    ]
+  ],
+  [
+    "CONFIG_ESP_SLEEP_GPIO_RESET_WORKAROUND",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      292
+    ]
+  ],
+  [
+    "CONFIG_ESP_SLEEP_GPIO_ENABLE_INTERNAL_RESISTORS",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      307
+    ]
+  ],
+  [
+    "CONFIG_PM_SLP_DISABLE_GPIO",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      320
+    ]
+  ],
+  [
+    "CONFIG_ESP_SLEEP_FLASH_LEAKAGE_WORKAROUND",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      335
+    ]
+  ],
+  [
+    "CONFIG_ESP_SLEEP_MSPI_NEED_ALL_IO_PU",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
+      353
     ]
   ],
   [
@@ -2080,24 +5609,6 @@
     ]
   ],
   [
-    "CONFIG_HAS_SEGGER_RTT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "SOC_FAMILY_STM32 && ZEPHYR_SEGGER_MODULE"
-    ]
-  ],
-  [
-    "CONFIG_USE_SEGGER_RTT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_ZEPHYR_TF_M_TESTS_MODULE",
     "n",
     "bool",
@@ -2202,6 +5713,27 @@
     ]
   ],
   [
+    "CONFIG_HAS_ESPRESSIF_HAL",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
+    ]
+  ],
+  [
+    "CONFIG_ESP_HAL_EARLY_LOG_LEVEL",
+    "y",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/modules/Kconfig.esp32",
+      22
+    ]
+  ],
+  [
     "CONFIG_LIBMETAL",
     "y",
     "bool",
@@ -2250,26 +5782,6 @@
     null
   ],
   [
-    "CONFIG_HAS_STM32CUBE",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
-    ]
-  ],
-  [
-    "CONFIG_USE_STM32_LL_UTILS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CLOCK_CONTROL_STM32_CUBE && SOC_FAMILY_STM32 && CLOCK_CONTROL"
-    ]
-  ],
-  [
     "CONFIG_MIPI_SYST_LIB",
     "y",
     "bool",
@@ -2297,7 +5809,7 @@
     "CONFIG_BOARD",
     "n",
     "string",
-    "stm32_min_dev",
+    "esp32s3_devkitc",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/boards/Kconfig",
@@ -2308,7 +5820,7 @@
     "CONFIG_BOARD_REVISION",
     "n",
     "string",
-    "blue",
+    "",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/boards/Kconfig",
@@ -2319,11 +5831,11 @@
     "CONFIG_BOARD_TARGET",
     "n",
     "string",
-    "stm32_min_dev@blue/stm32f103x8",
+    "esp32s3_devkitc/esp32s3/procpu",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/boards/Kconfig",
-      23
+      24
     ]
   ],
   [
@@ -2335,7 +5847,7 @@
     null
   ],
   [
-    "CONFIG_BOARD_STM32_MIN_DEV",
+    "CONFIG_BOARD_ESP32S3_DEVKITC",
     "n",
     "bool",
     "y",
@@ -2346,7 +5858,7 @@
     ]
   ],
   [
-    "CONFIG_BOARD_STM32_MIN_DEV_STM32F103X8",
+    "CONFIG_BOARD_ESP32S3_DEVKITC_ESP32S3_PROCPU",
     "n",
     "bool",
     "y",
@@ -2360,7 +5872,7 @@
     "CONFIG_BOARD_QUALIFIERS",
     "n",
     "string",
-    "stm32f103x8",
+    "esp32s3/procpu",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/boards/Kconfig.v2",
@@ -2368,87 +5880,108 @@
     ]
   ],
   [
-    "CONFIG_BOARD_REVISION_BLUE",
+    "CONFIG_HEAP_MEM_POOL_ADD_SIZE_BOARD",
     "n",
-    "bool",
-    "y",
+    "int",
+    "4096",
     "default",
     [
-      "/home/khaiwic/Zephyr_Prj/Blink_led/build/Kconfig/boards/Kconfig",
-      4
+      "/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/Kconfig",
+      6
     ]
   ],
   [
     "CONFIG_SOC",
     "n",
     "string",
-    "stm32f103x8",
+    "esp32s3",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/stm32f1x/Kconfig.soc",
-      73
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.soc",
+      139
     ]
   ],
   [
     "CONFIG_SOC_SERIES",
     "n",
     "string",
-    "stm32f1x",
+    "esp32s3",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/stm32f1x/Kconfig.soc",
-      12
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.soc",
+      136
     ]
   ],
   [
     "CONFIG_SOC_FAMILY",
     "n",
     "string",
-    "stm32",
+    "espressif_esp32",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/Kconfig.soc",
-      10
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/Kconfig.soc",
+      8
     ]
   ],
   [
-    "CONFIG_SOC_FAMILY_STM32",
+    "CONFIG_SOC_PART_NUMBER",
+    "n",
+    "string",
+    "ESP32S3_WROOM_N8",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.soc",
+      151
+    ]
+  ],
+  [
+    "CONFIG_SOC_FAMILY_ESPRESSIF_ESP32",
     "n",
     "bool",
     "y",
     "select",
     [
-      "SOC_SERIES_STM32F1X"
+      "SOC_SERIES_ESP32S3"
     ]
   ],
   [
-    "CONFIG_SOC_SERIES_STM32F1X",
+    "CONFIG_SOC_SERIES_ESP32S3",
     "n",
     "bool",
     "y",
     "select",
     [
-      "SOC_STM32F103X8"
+      "SOC_ESP32S3"
     ]
   ],
   [
-    "CONFIG_SOC_STM32F103X8",
+    "CONFIG_SOC_ESP32S3_WROOM_N8",
     "n",
     "bool",
     "y",
     "select",
     [
-      "BOARD_STM32_MIN_DEV"
+      "BOARD_ESP32S3_DEVKITC"
     ]
   ],
   [
-    "CONFIG_SOC_STM32F10X_DENSITY_DEVICE",
+    "CONFIG_SOC_ESP32S3",
     "n",
     "bool",
     "y",
     "select",
     [
-      "SOC_STM32F103X8"
+      "SOC_ESP32S3_WROOM_N8"
+    ]
+  ],
+  [
+    "CONFIG_SOC_ESP32S3_PROCPU",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "BOARD_ESP32S3_DEVKITC && BOARD_ESP32S3_DEVKITC_ESP32S3_PROCPU"
     ]
   ],
   [
@@ -2458,43 +5991,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_STM32_ENABLE_DEBUG_SLEEP_STOP",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_SWJ_ANALOG_PRIORITY",
-    "y",
-    "int",
-    "49",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/soc/st/stm32/common/Kconfig",
-      37
-    ]
-  ],
-  [
-    "CONFIG_STM32_XSPIM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_HAS_STM32_FLASH_PREFETCH",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
-    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_INFO_HEADER",
@@ -2516,48 +6012,642 @@
     ]
   ],
   [
-    "CONFIG_ARCH",
-    "n",
-    "string",
-    "arm",
+    "CONFIG_ESP32_USE_UNSUPPORTED_REVISION",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP_SIMPLE_BOOT",
+    "y",
+    "bool",
+    "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/Kconfig",
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig",
+      23
+    ]
+  ],
+  [
+    "CONFIG_ESP32_TIMER_TASK_STACK_SIZE",
+    "y",
+    "int",
+    "1536",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig",
+      32
+    ]
+  ],
+  [
+    "CONFIG_ESP32_TIMER_TASK_PRIO",
+    "y",
+    "int",
+    "3",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig",
+      41
+    ]
+  ],
+  [
+    "CONFIG_ESP_CONSOLE_UART_NUM",
+    "n",
+    "int",
+    "0",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.console",
+      62
+    ]
+  ],
+  [
+    "CONFIG_ESP_CONSOLE_UART_BAUDRATE",
+    "n",
+    "int",
+    "115200",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.console",
+      70
+    ]
+  ],
+  [
+    "CONFIG_ESP_CONSOLE_UART",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.console",
+      53
+    ]
+  ],
+  [
+    "CONFIG_ESP_CONSOLE",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.console",
+      78
+    ]
+  ],
+  [
+    "CONFIG_ESP_USB_SERIAL_JTAG_ENABLED",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.console",
+      84
+    ]
+  ],
+  [
+    "CONFIG_ESP32_EFUSE_VIRTUAL",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32_EFUSE_MAX_BLK_LEN",
+    "n",
+    "int",
+    "256",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.efuse",
+      45
+    ]
+  ],
+  [
+    "CONFIG_ESP_SPIRAM",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_OCT_FLASH",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASH_MODE_AUTO_DETECT",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      19
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHMODE_QIO",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHMODE_QOUT",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHMODE_DIO",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      37
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHMODE_DOUT",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASH_SAMPLE_MODE_STR",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      68
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHMODE",
+    "n",
+    "string",
+    "dio",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      83
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_120M",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_80M",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      96
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_60M",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_48M",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_40M",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_20M",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ_80M_DEFAULT",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      135
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHFREQ",
+    "n",
+    "string",
+    "80m",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      144
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_1MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_2MB",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      154
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_4MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_8MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_16MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_32MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_64MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE_128MB",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_FLASHSIZE",
+    "n",
+    "string",
+    "2MB",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      187
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_BEFORE_RESET",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      208
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_BEFORE_NORESET",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_BEFORE",
+    "n",
+    "string",
+    "default_reset",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      226
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_AFTER_RESET",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      231
+    ]
+  ],
+  [
+    "CONFIG_ESPTOOLPY_AFTER_NORESET",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESPTOOLPY_AFTER",
+    "n",
+    "string",
+    "hard_reset",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
+      248
+    ]
+  ],
+  [
+    "CONFIG_MMU_PAGE_SIZE",
+    "n",
+    "hex",
+    "0x10000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      8
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_VENDOR_MXIC_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      12
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_ISSI_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      16
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_MXIC_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      24
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_GD_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      32
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_WINBOND_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      45
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_BOYA_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      53
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_TH_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      61
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_SUPPORT_MXIC_OPI_CHIP",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      70
+    ]
+  ],
+  [
+    "CONFIG_SPI_FLASH_ROM_DRIVER_PATCH",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      78
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_FLASH_XMC_SUPPORT",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      87
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_VDDSDIO_BOOST_1_9V",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      96
+    ]
+  ],
+  [
+    "CONFIG_BOOTLOADER_REGION_PROTECTION_ENABLE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32_SLEEP_WAIT_FLASH_READY_EXTRA_DELAY",
+    "y",
+    "int",
+    "2000",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
+      147
+    ]
+  ],
+  [
+    "CONFIG_SOC_ESP32_FLASH_SUPPORTED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.caps",
       10
     ]
   ],
   [
-    "CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT",
+    "CONFIG_SOC_ESP32_PM_SUPPORT_VDDSDIO_PD",
     "n",
     "bool",
     "y",
-    "select",
+    "default",
     [
-      "CPU_CORTEX_M && ARM"
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.caps",
+      14
     ]
   ],
   [
-    "CONFIG_CPU_CORTEX",
+    "CONFIG_SOC_ESP32_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
     "n",
     "bool",
     "y",
-    "select",
+    "default",
     [
-      "CPU_CORTEX_M && ARM"
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.caps",
+      22
     ]
   ],
   [
-    "CONFIG_CPU_CORTEX_M",
+    "CONFIG_SOC_ESP32_PM_SUPPORT_CPU_PD",
     "n",
     "bool",
     "y",
-    "select",
+    "default",
     [
-      "CPU_CORTEX_M3 && ARM"
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.caps",
+      6
     ]
   ],
   [
-    "CONFIG_ARM_ZIMAGE_HEADER",
+    "CONFIG_SOC_ESP32_SPI_MEM_SUPPORT_TIMING_TUNING",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.caps",
+      18
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_16KB",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      24
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_32KB",
     "y",
     "bool",
     null,
@@ -2565,50 +6655,18 @@
     null
   ],
   [
-    "CONFIG_ISA_THUMB2",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_SIZE",
     "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ASSEMBLER_ISA_THUMB2",
-    "n",
-    "bool",
-    "y",
+    "hex",
+    "0x4000",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      151
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      40
     ]
   ],
   [
-    "CONFIG_COMPILER_ISA_THUMB2",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      168
-    ]
-  ],
-  [
-    "CONFIG_STACK_ALIGN_DOUBLE_WORD",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      186
-    ]
-  ],
-  [
-    "CONFIG_RUNTIME_NMI",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_4WAYS",
     "y",
     "bool",
     null,
@@ -2616,40 +6674,59 @@
     null
   ],
   [
-    "CONFIG_FAULT_DUMP",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_8WAYS",
     "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      45
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_ICACHE_ASSOCIATED_WAYS",
+    "n",
     "int",
-    "2",
+    "8",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      221
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      60
     ]
   ],
   [
-    "CONFIG_FP16",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_LINE_16B",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      352
-    ]
+    null,
+    "unset",
+    null
   ],
   [
-    "CONFIG_FP16_IEEE",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_LINE_32B",
     "y",
     "bool",
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/Kconfig",
-      360
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      64
     ]
   ],
   [
-    "CONFIG_FP16_ALT",
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_LINE_SIZE",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      80
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_INSTRUCTION_CACHE_WRAP",
     "y",
     "bool",
     null,
@@ -2657,77 +6734,7 @@
     null
   ],
   [
-    "CONFIG_CPU_CORTEX_M3",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
-    ]
-  ],
-  [
-    "CONFIG_CPU_CORTEX_M_HAS_SYSTICK",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_CPU_CORTEX_M_HAS_DWT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
-    ]
-  ],
-  [
-    "CONFIG_CPU_CORTEX_M_HAS_BASEPRI",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_CPU_CORTEX_M_HAS_VTOR",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARMV7_M_ARMV8_M_MAINLINE",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M3 && ARM"
-    ]
-  ],
-  [
-    "CONFIG_SW_VECTOR_RELAY",
+    "CONFIG_ESP32S3_DATA_CACHE_16KB",
     "y",
     "bool",
     null,
@@ -2735,42 +6742,18 @@
     null
   ],
   [
-    "CONFIG_CORTEX_M_DWT",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_CORTEX_M_DEBUG_MONITOR_HOOK",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_TRAP_UNALIGNED_ACCESS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE",
+    "CONFIG_ESP32S3_DATA_CACHE_32KB",
     "y",
     "bool",
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/arch/arm/core/cortex_m/Kconfig",
-      423
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      91
     ]
   ],
   [
-    "CONFIG_NULL_POINTER_EXCEPTION_DETECTION_DWT",
+    "CONFIG_ESP32S3_DATA_CACHE_64KB",
     "y",
     "bool",
     null,
@@ -2778,33 +6761,250 @@
     null
   ],
   [
-    "CONFIG_HAS_SWO",
+    "CONFIG_ESP32S3_DATA_CACHE_SIZE",
     "n",
-    "bool",
-    "y",
-    "select",
+    "hex",
+    "0x8000",
+    "default",
     [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      112
     ]
   ],
   [
-    "CONFIG_ARCH_HAS_LLEXT_VENEERS",
-    "n",
+    "CONFIG_ESP32S3_DATA_CACHE_4WAYS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_8WAYS",
+    "y",
     "bool",
     "y",
-    "select",
+    "default",
     [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      117
     ]
   ],
   [
-    "CONFIG_ARM",
+    "CONFIG_ESP32S3_DCACHE_ASSOCIATED_WAYS",
+    "n",
+    "int",
+    "8",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      132
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_LINE_16B",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_LINE_32B",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      136
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_LINE_64B",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_LINE_SIZE",
+    "n",
+    "int",
+    "32",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig",
+      155
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_DATA_CACHE_WRAP",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP_MAC_ADDR_UNIVERSE_WIFI_STA",
     "n",
     "bool",
     "y",
     "select",
     [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
+      "ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR && <choice ESP32S3_UNIVERSAL_MAC_ADDRESSES>"
+    ]
+  ],
+  [
+    "CONFIG_ESP_MAC_ADDR_UNIVERSE_WIFI_AP",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR && <choice ESP32S3_UNIVERSAL_MAC_ADDRESSES>"
+    ]
+  ],
+  [
+    "CONFIG_ESP_MAC_ADDR_UNIVERSE_ETH",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR && <choice ESP32S3_UNIVERSAL_MAC_ADDRESSES>"
+    ]
+  ],
+  [
+    "CONFIG_ESP_MAC_ADDR_UNIVERSE_BT",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR && <choice ESP32S3_UNIVERSAL_MAC_ADDRESSES>"
+    ]
+  ],
+  [
+    "CONFIG_ESP_MAC_UNIVERSAL_MAC_ADDRESSES_FOUR",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR && <choice ESP32S3_UNIVERSAL_MAC_ADDRESSES>"
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_UNIVERSAL_MAC_ADDRESSES_TWO",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ESP32S3_UNIVERSAL_MAC_ADDRESSES_FOUR",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.mac",
+      8
+    ]
+  ],
+  [
+    "CONFIG_ESP32S3_UNIVERSAL_MAC_ADDRESSES",
+    "n",
+    "int",
+    "4",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.mac",
+      45
+    ]
+  ],
+  [
+    "CONFIG_RESERVE_RTC_MEM",
+    "n",
+    "int",
+    "24",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/Kconfig",
+      44
+    ]
+  ],
+  [
+    "CONFIG_ESP32_ULP_COPROC_ENABLED",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_ARCH",
+    "n",
+    "string",
+    "xtensa",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/arch/xtensa/Kconfig",
+      10
+    ]
+  ],
+  [
+    "CONFIG_SIMULATOR_XTENSA",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_ENABLE_BACKTRACE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_MORE_SPIN_RELAX_NOPS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_BREAK_ON_UNRECOVERABLE_EXCEPTIONS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA_INTERRUPT_NONPREEMPTABLE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_XTENSA",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -2814,7 +7014,7 @@
     "y",
     "select",
     [
-      "ARM"
+      "XTENSA"
     ]
   ],
   [
@@ -2829,18 +7029,10 @@
     "CONFIG_ARCH_HAS_WORD_GRANULAR_ACCESS_INSTR_MEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_ARCH_SUPPORTS_ROM_OFFSET",
-    "n",
-    "bool",
     "y",
     "select",
     [
-      "ARM"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -2877,7 +7069,7 @@
     "CONFIG_SRAM_SIZE",
     "y",
     "int",
-    "20",
+    "416",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
@@ -2888,7 +7080,7 @@
     "CONFIG_SRAM_BASE_ADDRESS",
     "y",
     "hex",
-    "0x20000000",
+    "0x3fc88000",
     "default",
     [
       "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
@@ -2902,16 +7094,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_GEN_PRIV_STACKS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM"
-    ]
   ],
   [
     "CONFIG_STACK_GROWS_UP",
@@ -2930,14 +7112,6 @@
     null
   ],
   [
-    "CONFIG_ISR_TABLES_LOCAL_DECLARATION",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_ARCH_DEVICE_STATE_ALIGN",
     "y",
     "int",
@@ -2947,25 +7121,6 @@
       "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
       625
     ]
-  ],
-  [
-    "CONFIG_IRQ_VECTOR_TABLE_JUMP_BY_ADDRESS",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
-      633
-    ]
-  ],
-  [
-    "CONFIG_IRQ_VECTOR_TABLE_JUMP_BY_CODE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_GEN_SW_ISR_TABLE_ARRAY",
@@ -2990,9 +7145,11 @@
     "CONFIG_SRAM_SW_ISR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "DYNAMIC_INTERRUPTS"
+    ]
   ],
   [
     "CONFIG_EXCEPTION_DEBUG",
@@ -3006,14 +7163,6 @@
     ]
   ],
   [
-    "CONFIG_EXTRA_EXCEPTION_INFO",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_SIMPLIFIED_EXCEPTION_CODES",
     "y",
     "bool",
@@ -3022,73 +7171,23 @@
     null
   ],
   [
-    "CONFIG_ARCH_HAS_BIT_REV",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
     "CONFIG_ARCH_HAS_TIMING_FUNCTIONS",
     "n",
     "bool",
     "y",
     "select",
     [
-      "CPU_CORTEX_M && CPU_CORTEX_M_HAS_DWT && ARM"
+      "XTENSA"
     ]
   ],
   [
-    "CONFIG_ARCH_HAS_RAMFUNC_SUPPORT",
+    "CONFIG_ARCH_HAS_IRQ_OFFLOAD_NESTED",
     "n",
     "bool",
     "y",
     "select",
     [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_VECTOR_TABLE_RELOCATION",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && CPU_CORTEX_M_HAS_VTOR && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_NESTED_EXCEPTION_DETECTION",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_IRQ_PENDING_OPS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && !ARM_CUSTOM_INTERRUPT_CONTROLLER && !MULTI_LEVEL_INTERRUPTS && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_DIRECT_INTERRUPTS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM"
+      "XTENSA"
     ]
   ],
   [
@@ -3098,17 +7197,7 @@
     "y",
     "select",
     [
-      "ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_ISR_TABLES_LOCAL_DECLARATION",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM"
+      "XTENSA"
     ]
   ],
   [
@@ -3118,7 +7207,7 @@
     "y",
     "select",
     [
-      "ARM && CPU_CORTEX_M"
+      "XTENSA"
     ]
   ],
   [
@@ -3128,17 +7217,7 @@
     "y",
     "select",
     [
-      "ARM && CPU_CORTEX_M"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_SUPPORTS_COREDUMP_THREADS",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM && CPU_CORTEX_M"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -3148,67 +7227,7 @@
     "y",
     "select",
     [
-      "ARM && CPU_CORTEX_M"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_SUPPORTS_ARCH_HW_INIT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_SUPPORTS_ROM_START",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_EXTRA_EXCEPTION_INFO",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM && (CPU_AARCH32_CORTEX_R || CPU_CORTEX_M || CPU_AARCH32_CORTEX_A)"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_SUSPEND_TO_RAM",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_THREAD_ABORT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && !USE_SWITCH && ARM"
+      "XTENSA && !SMP"
     ]
   ],
   [
@@ -3218,7 +7237,27 @@
     "y",
     "select",
     [
-      "CPU_CORTEX_M && ARM"
+      "XTENSA"
+    ]
+  ],
+  [
+    "CONFIG_CPU_HAS_FPU",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
+    ]
+  ],
+  [
+    "CONFIG_CPU_HAS_DCACHE",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -3230,6 +7269,25 @@
     null
   ],
   [
+    "CONFIG_ARCH_CACHE",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_EXTERNAL_CACHE",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/soc/espressif/esp32s3/Kconfig.defconfig",
+      10
+    ]
+  ],
+  [
     "CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS",
     "n",
     "bool",
@@ -3238,16 +7296,6 @@
     [
       "/home/khaiwic/zephyrproject/zephyr/arch/Kconfig",
       1459
-    ]
-  ],
-  [
-    "CONFIG_ARCH_HAS_CUSTOM_SWAP_TO_MAIN",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && !USE_SWITCH && ARM"
     ]
   ],
   [
@@ -3317,9 +7365,11 @@
     "CONFIG_THREAD_STACK_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "XTENSA"
+    ]
   ],
   [
     "CONFIG_THREAD_CUSTOM_DATA",
@@ -3384,17 +7434,6 @@
     [
       "/home/khaiwic/zephyrproject/zephyr/kernel/Kconfig",
       356
-    ]
-  ],
-  [
-    "CONFIG_CURRENT_THREAD_USE_TLS",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/kernel/Kconfig",
-      381
     ]
   ],
   [
@@ -3481,16 +7520,6 @@
     [
       "/home/khaiwic/zephyrproject/zephyr/kernel/Kconfig",
       558
-    ]
-  ],
-  [
-    "CONFIG_BARRIER_OPERATIONS_ARCH",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "ARM"
     ]
   ],
   [
@@ -3594,16 +7623,6 @@
     null
   ],
   [
-    "CONFIG_SWAP_NONATOMIC",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CPU_CORTEX_M && ARM"
-    ]
-  ],
-  [
     "CONFIG_TIMEOUT_64BIT",
     "y",
     "bool",
@@ -3672,9 +7691,11 @@
     "CONFIG_USE_SWITCH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "XTENSA"
+    ]
   ],
   [
     "CONFIG_USE_SWITCH_SUPPORTED",
@@ -3683,7 +7704,7 @@
     "y",
     "select",
     [
-      "ARMV7_M_ARMV8_M_MAINLINE && !TRUSTED_EXECUTION_NONSECURE && CPU_CORTEX_M && ARM"
+      "XTENSA"
     ]
   ],
   [
@@ -3694,16 +7715,6 @@
     "select",
     [
       "TOOLCHAIN_ZEPHYR_SUPPORTS_THREAD_LOCAL_STORAGE"
-    ]
-  ],
-  [
-    "CONFIG_THREAD_LOCAL_STORAGE",
-    "y",
-    "bool",
-    "y",
-    "select",
-    [
-      "PICOLIBC_USE_TOOLCHAIN && ARCH_HAS_THREAD_LOCAL_STORAGE && TOOLCHAIN_SUPPORTS_THREAD_LOCAL_STORAGE && y = y && <choice PICOLIBC_SOURCE>"
     ]
   ],
   [
@@ -3845,6 +7856,35 @@
     null
   ],
   [
+    "CONFIG_CACHE_HAS_DRIVER",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "CACHE_ESP32 && SOC_FAMILY_ESPRESSIF_ESP32 && CACHE_MANAGEMENT && CACHE"
+    ]
+  ],
+  [
+    "CONFIG_CACHE_ESP32",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/cache/Kconfig.esp32",
+      6
+    ]
+  ],
+  [
+    "CONFIG_CACHE_NRF_PATCH_LINEADDR",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
     "CONFIG_CAN",
     "y",
     "bool",
@@ -3859,6 +7899,63 @@
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
+      9
+    ]
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_SRC_INT_RC",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
+      27
+    ]
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_SRC_EXT_CRYS",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_SRC_EXT_OSC",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_SRC_INT_8MD256",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
+  ],
+  [
+    "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_CAL_CYCLES",
+    "y",
+    "int",
+    "1024",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
+      64
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
@@ -3877,28 +7974,6 @@
     [
       "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.nrf",
       15
-    ]
-  ],
-  [
-    "CONFIG_CLOCK_CONTROL_STM32_CUBE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.stm32",
-      11
-    ]
-  ],
-  [
-    "CONFIG_CLOCK_STM32_HSE_CLOCK",
-    "n",
-    "int",
-    "8000000",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/clock_control/Kconfig.stm32",
-      27
     ]
   ],
   [
@@ -3964,8 +8039,8 @@
     "y",
     "assign",
     [
-      "/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig",
-      12
+      "/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu_defconfig",
+      5
     ]
   ],
   [
@@ -4153,14 +8228,6 @@
     null
   ],
   [
-    "CONFIG_ARM_SCMI",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_FLASH_FILL_GENERIC_IMPLEMENTATION",
     "y",
     "bool",
@@ -4220,14 +8287,13 @@
     null
   ],
   [
-    "CONFIG_GPIO_STM32",
+    "CONFIG_GPIO_ESP32",
     "y",
     "bool",
     "y",
-    "default",
+    "select",
     [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/gpio/Kconfig.stm32",
-      9
+      "UART_ESP32 && DT_HAS_ESPRESSIF_ESP32_UART_ENABLED && SERIAL"
     ]
   ],
   [
@@ -4274,26 +8340,23 @@
     ]
   ],
   [
-    "CONFIG_EXTI_STM32",
+    "CONFIG_INTC_ESP32",
     "y",
     "bool",
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.stm32",
-      11
+      "/home/khaiwic/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.esp32",
+      8
     ]
   ],
   [
-    "CONFIG_GPIO_INTC_STM32",
+    "CONFIG_INTC_ESP32_DECISIONS_LOG",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.stm32",
-      18
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_IPM",
@@ -4406,7 +8469,7 @@
     "y",
     "select",
     [
-      "UART_STM32 && DT_HAS_ST_STM32_UART_ENABLED && SERIAL"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -4416,6 +8479,17 @@
     null,
     "unset",
     null
+  ],
+  [
+    "CONFIG_PINCTRL_ESP32",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/pinctrl/Kconfig.esp32",
+      6
+    ]
   ],
   [
     "CONFIG_PINCTRL_MCHP_COMMON",
@@ -4432,28 +8506,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_PINCTRL_STM32",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/pinctrl/Kconfig.stm32",
-      6
-    ]
-  ],
-  [
-    "CONFIG_PINCTRL_STM32_REMAP_INIT_PRIORITY",
-    "y",
-    "int",
-    "2",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/pinctrl/Kconfig.stm32",
-      14
-    ]
   ],
   [
     "CONFIG_PS2",
@@ -4494,17 +8546,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_RESET_STM32",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/reset/Kconfig.stm32",
-      6
-    ]
   ],
   [
     "CONFIG_RETAINED_MEM",
@@ -4553,7 +8594,17 @@
     "y",
     "select",
     [
-      "UART_STM32 && DT_HAS_ST_STM32_UART_ENABLED && SERIAL"
+      "UART_ESP32 && DT_HAS_ESPRESSIF_ESP32_UART_ENABLED && SERIAL"
+    ]
+  ],
+  [
+    "CONFIG_SERIAL_SUPPORT_ASYNC",
+    "n",
+    "bool",
+    "y",
+    "select",
+    [
+      "UART_ESP32 && (SOC_SERIES_ESP32C3 || SOC_SERIES_ESP32C5 || SOC_SERIES_ESP32C6 || SOC_SERIES_ESP32H2 || SOC_SERIES_ESP32S3) && DT_HAS_ESPRESSIF_ESP32_UART_ENABLED && SERIAL"
     ]
   ],
   [
@@ -4563,7 +8614,7 @@
     "y",
     "select",
     [
-      "UART_STM32 && DT_HAS_ST_STM32_UART_ENABLED && SERIAL"
+      "UART_ESP32 && DT_HAS_ESPRESSIF_ESP32_UART_ENABLED && SERIAL"
     ]
   ],
   [
@@ -4576,6 +8627,14 @@
       "/home/khaiwic/zephyrproject/zephyr/drivers/serial/Kconfig",
       36
     ]
+  ],
+  [
+    "CONFIG_UART_ASYNC_API",
+    "y",
+    "bool",
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_UART_LINE_CTRL",
@@ -4610,23 +8669,45 @@
     null
   ],
   [
+    "CONFIG_UART_ESP32",
+    "y",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
+      6
+    ]
+  ],
+  [
+    "CONFIG_UART_ESP32_TX_FIFO_THRESH",
+    "y",
+    "hex",
+    "0x1",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
+      36
+    ]
+  ],
+  [
+    "CONFIG_UART_ESP32_RX_FIFO_THRESH",
+    "y",
+    "hex",
+    "0x16",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
+      44
+    ]
+  ],
+  [
     "CONFIG_UART_NPCX_FIFO_EX",
     "y",
     "bool",
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_UART_STM32",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/serial/Kconfig.stm32",
-      8
-    ]
   ],
   [
     "CONFIG_SMBUS",
@@ -4651,16 +8732,6 @@
     null,
     "unset",
     null
-  ],
-  [
-    "CONFIG_TIMER_HAS_64BIT_CYCLE_COUNTER",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CORTEX_M_SYSTICK_64BIT_CYCLE_COUNTER && CORTEX_M_SYSTICK && SYS_CLOCK_EXISTS"
-    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_SLOPPY_IDLE",
@@ -4688,89 +8759,19 @@
     "y",
     "select",
     [
-      "CORTEX_M_SYSTICK && CPU_CORTEX_M_HAS_SYSTICK && (DT_HAS_ARM_ARMV6M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8_1M_SYSTICK_ENABLED) && SYS_CLOCK_EXISTS"
+      "XTENSA_TIMER && XTENSA && SYS_CLOCK_EXISTS"
     ]
   ],
   [
-    "CONFIG_SYSTEM_TIMER_HAS_DISABLE_SUPPORT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CORTEX_M_SYSTICK && CPU_CORTEX_M_HAS_SYSTICK && (DT_HAS_ARM_ARMV6M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8_1M_SYSTICK_ENABLED) && SYS_CLOCK_EXISTS"
-    ]
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_INSTALL_ISR",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CORTEX_M_SYSTICK && CPU_CORTEX_M_HAS_SYSTICK && (DT_HAS_ARM_ARMV6M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8_1M_SYSTICK_ENABLED) && SYS_CLOCK_EXISTS"
-    ]
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_64BIT_CYCLE_COUNTER",
+    "CONFIG_XTENSA_TIMER_LPM_TIMER_NONE",
     "y",
     "bool",
     "y",
     "default",
     [
-      "/home/khaiwic/zephyrproject/zephyr/drivers/timer/Kconfig.cortex_m_systick",
-      32
+      "/home/khaiwic/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
+      31
     ]
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_NONE",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_COUNTER",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_LPM_TIMER_HOOKS",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_CORTEX_M_SYSTICK_RESET_BY_LPM",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_SYSTEM_TIMER_HAS_LPM_COMPANION_SUPPORT",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "CORTEX_M_SYSTICK && CPU_CORTEX_M_HAS_SYSTICK && (DT_HAS_ARM_ARMV6M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8M_SYSTICK_ENABLED || DT_HAS_ARM_ARMV8_1M_SYSTICK_ENABLED) && SYS_CLOCK_EXISTS"
-    ]
-  ],
-  [
-    "CONFIG_SYSTEM_TIMER_LPM_COMPANION_NONE",
-    "y",
-    "bool",
-    "y",
-    "default",
-    null
   ],
   [
     "CONFIG_UAOL",
@@ -5044,16 +9045,6 @@
     null
   ],
   [
-    "CONFIG_LIBC_ERRNO",
-    "n",
-    "bool",
-    "y",
-    "select",
-    [
-      "PICOLIBC && THREAD_LOCAL_STORAGE && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
-    ]
-  ],
-  [
     "CONFIG_ERRNO",
     "y",
     "bool",
@@ -5276,12 +9267,9 @@
     "CONFIG_SYS_HEAP_SMALL_ONLY",
     "y",
     "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/lib/heap/Kconfig",
-      320
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_BIG_ONLY",
@@ -5295,9 +9283,12 @@
     "CONFIG_SYS_HEAP_AUTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/lib/heap/Kconfig",
+      321
+    ]
   ],
   [
     "CONFIG_MULTI_HEAP",
@@ -5386,7 +9377,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -5453,7 +9444,7 @@
     "y",
     "select",
     [
-      "ARMV7_M_ARMV8_M_MAINLINE && CPU_CORTEX_M && ARM"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -5699,9 +9690,11 @@
     "CONFIG_WORD_GRANULAR_ACCESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "y",
+    "select",
+    [
+      "ARCH_HAS_WORD_GRANULAR_ACCESS_INSTR_MEM"
+    ]
   ],
   [
     "CONFIG_MIN_HEAP",
@@ -5713,14 +9706,6 @@
   ],
   [
     "CONFIG_FIDO2",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
-    "CONFIG_BINDESC",
     "y",
     "bool",
     null,
@@ -6110,7 +10095,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
+      "SOC_SERIES_ESP32S3 && SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -6120,7 +10105,7 @@
     "y",
     "select",
     [
-      "SOC_SERIES_STM32F1X && SOC_FAMILY_STM32"
+      "SOC_FAMILY_ESPRESSIF_ESP32"
     ]
   ],
   [
@@ -6269,6 +10254,17 @@
     [
       "/home/khaiwic/zephyrproject/zephyr/subsys/random/Kconfig",
       33
+    ]
+  ],
+  [
+    "CONFIG_ENTROPY_NODE_ENABLED",
+    "n",
+    "bool",
+    "y",
+    "default",
+    [
+      "/home/khaiwic/zephyrproject/zephyr/subsys/random/Kconfig",
+      109
     ]
   ],
   [
@@ -6614,14 +10610,6 @@
     ]
   ],
   [
-    "CONFIG_CMAKE_LINKER_GENERATOR",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
-  ],
-  [
     "CONFIG_HAVE_CUSTOM_LINKER_SCRIPT",
     "y",
     "bool",
@@ -6649,28 +10637,6 @@
     null
   ],
   [
-    "CONFIG_LINKER_LAST_SECTION_ID",
-    "y",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/Kconfig.zephyr",
-      291
-    ]
-  ],
-  [
-    "CONFIG_LINKER_LAST_SECTION_ID_PATTERN",
-    "y",
-    "hex",
-    "0xE015E015",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/Kconfig.zephyr",
-      307
-    ]
-  ],
-  [
     "CONFIG_LINKER_ITERABLE_SUBALIGN",
     "n",
     "int",
@@ -6680,25 +10646,6 @@
       "/home/khaiwic/zephyrproject/zephyr/Kconfig.zephyr",
       337
     ]
-  ],
-  [
-    "CONFIG_LINKER_DEVNULL_SUPPORT",
-    "n",
-    "bool",
-    "y",
-    "default",
-    [
-      "/home/khaiwic/zephyrproject/zephyr/Kconfig.zephyr",
-      343
-    ]
-  ],
-  [
-    "CONFIG_LINKER_DEVNULL_MEMORY",
-    "y",
-    "bool",
-    null,
-    "unset",
-    null
   ],
   [
     "CONFIG_STD_C90",

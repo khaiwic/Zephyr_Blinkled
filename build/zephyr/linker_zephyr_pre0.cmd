@@ -1,82 +1,672 @@
- OUTPUT_FORMAT("elf32-littlearm")
-_region_min_align = 4;
+       
+bootloader_iram_loader_seg_start = (((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00);
+bootloader_dram_loader_seg_start = ((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00);
+bootloader_iram_seg_start = (((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) + 0x6f0000 - ((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) - (1070104576)) / 4)) + ((0x400) - 1)) & ~((0x400) - 1));
+bootloader_dram_seg_start = ((((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) + 0x6f0000 - ((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) - (1070104576)) / 4)) + ((0x400) - 1)) & ~((0x400) - 1)) - 0x6f0000 - (((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) + 0x6f0000 - (((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) + 0x6f0000 - ((((((0x3fce9704 - 0x2000) & ~0xFF) + 0x6f0000 - 0x1C00) - 0x6f0000 - 0x0C00) - (1070104576)) / 4)) + ((0x400) - 1)) & ~((0x400) - 1))));
+user_dram_end = 0x3fce9704;
+procpu_iram_end = (0x3fce9704 + 0x6f0000) - (0 + 0);
+procpu_dram_end = 0x3fce9704 - (0 + 0);
+procpu_iram_org = ((1077346304) + 0x4000);
+procpu_iram_len = procpu_iram_end - procpu_iram_org;
+procpu_dram_org = (1070104576);
+procpu_dram_len = procpu_dram_end - procpu_dram_org;
+procpu_irom_end = (1107296256) + (33554432) - (0 + 0);
+procpu_drom_end = (1006632960) + (33554432) - (0 + 0);
+procpu_irom_org = (1107296256);
+procpu_irom_len = (33554432) - (0 + 0);
+procpu_drom_org = (1006632960);
+procpu_drom_len = (33554432) - (0 + 0);
+rtc_iram_org = (1611653120);
+rtc_iram_len = (8192);
+rtc_slow_org = (1342177280);
+rtc_slow_len = (8192);
 MEMORY
-    {
-    FLASH (rx) : ORIGIN = (0x8000000 + 0x0), LENGTH = (64 * 1024 - 0x0 - 0x0)
-    RAM (wx) : ORIGIN = (536870912), LENGTH = (20480)
-    SRAM0 ( rw ) : ORIGIN = (536870912), LENGTH = (20480)
-    IDT_LIST (wx) : ORIGIN = 0xFFFF7FFF, LENGTH = 32K
-    }
+{
+  FLASH (R): org = 0x0, len = (8388608) - 0x100
+  iram0_0_seg(RX): org = procpu_iram_org, len = procpu_iram_len
+  dram0_0_seg(RW): org = procpu_dram_org, len = procpu_dram_len
+  irom0_0_seg(RX): org = procpu_irom_org, len = procpu_irom_len
+  drom0_0_seg(R): org = procpu_drom_org, len = procpu_drom_len
+  rtc_iram_seg(RWX): org = rtc_iram_org, len = rtc_iram_len - 24
+  rtc_reserved_seg(RW): org = rtc_iram_org + rtc_iram_len - 24,
+                        len = 24
+  rtc_slow_seg(RW): org = rtc_slow_org, len = rtc_slow_len
+  IDT_LIST(RW): org = 0x3ebfe010, len = 0x2000
+}
 ENTRY("__start")
+_heap_sentry = 0x3fce9704;
+_libc_heap_size = _heap_sentry - _end;
 SECTIONS
-    {
- .rel.plt :
+{
+  _iram_dram_offset = 0x6f0000;
+ .rel.plt : ALIGN_WITH_INPUT
  {
  *(.rel.plt)
  PROVIDE_HIDDEN (__rel_iplt_start = .);
  *(.rel.iplt)
  PROVIDE_HIDDEN (__rel_iplt_end = .);
  }
- .rela.plt :
+ .rela.plt : ALIGN_WITH_INPUT
  {
  *(.rela.plt)
  PROVIDE_HIDDEN (__rela_iplt_start = .);
  *(.rela.iplt)
  PROVIDE_HIDDEN (__rela_iplt_end = .);
  }
- .rel.dyn :
+ .rel.dyn : ALIGN_WITH_INPUT
  {
  *(.rel.*)
  }
- .rela.dyn :
+ .rela.dyn : ALIGN_WITH_INPUT
  {
  *(.rela.*)
  }
-    /DISCARD/ :
+  .rtc.text :
+  {
+    . = ALIGN(4);
+    _rtc_text_start = ABSOLUTE(.);
+    _rtc_fast_start = ABSOLUTE(.);
+    *(.rtc.literal .rtc.literal.*)
+    *(.rtc.text .rtc.text.*)
+    *(.rtc.entry.literal)
+    *(.rtc.entry.text)
+    . = ALIGN(4);
+  } > rtc_iram_seg AT > FLASH
+  .rtc.force_fast :
+  {
+    . = ALIGN(4);
+    _rtc_force_fast_start = ABSOLUTE(.);
+    *(.rtc.force_fast .rtc.force_fast.*)
+    . = ALIGN(4);
+    _rtc_force_fast_end = ABSOLUTE(.);
+  } > rtc_iram_seg AT > FLASH
+  .rtc.data :
+  {
+  . = ALIGN(4);
+    _rtc_data_start = ABSOLUTE(.);
+    *(.rtc.data .rtc.data.*)
+    *(.rtc.rodata .rtc.rodata.*)
+    _rtc_data_end = ABSOLUTE(.);
+  } > rtc_slow_seg AT > FLASH
+  .rtc.bss (NOLOAD) :
+  {
+    _rtc_bss_start = ABSOLUTE(.);
+    *(.rtc.bss .rtc.bss.*)
+    _rtc_bss_end = ABSOLUTE(.);
+  } > rtc_slow_seg
+  .rtc_noinit (NOLOAD) :
+  {
+    . = ALIGN(4);
+    *(.rtc_noinit .rtc_noinit.*)
+    . = ALIGN(4) ;
+  } > rtc_slow_seg
+  .rtc.force_slow :
+  {
+    . = ALIGN(4);
+    _rtc_force_slow_start = ABSOLUTE(.);
+    *(.rtc.force_slow .rtc.force_slow.*)
+    . = ALIGN(4);
+    _rtc_force_slow_end = ABSOLUTE(.);
+  } > rtc_slow_seg AT > FLASH
+  .rtc_reserved (NOLOAD) :
+  {
+    . = ALIGN(4);
+    _rtc_reserved_start = ABSOLUTE(.);
+    *(.rtc_timer_data_in_rtc_mem .rtc_timer_data_in_rtc_mem.*)
+    _rtc_reserved_end = ABSOLUTE(.);
+  } > rtc_reserved_seg
+  _rtc_reserved_length = (_rtc_reserved_end - _rtc_reserved_start);
+  ASSERT((_rtc_reserved_length <= 24),
+         "RTC reserved segment does not fit CONFIG_RESERVE_RTC_MEM.")
+  _rtc_slow_length = (_rtc_force_slow_end - _rtc_data_start);
+  _rtc_fast_length = (_rtc_force_fast_end - _rtc_fast_start);
+  .iram0.vectors : ALIGN(4)
+  {
+    _init_start = ABSOLUTE(.);
+    . = 0x0;
+    KEEP(*(.WindowVectors.text));
+    . = 0x180;
+    KEEP(*(.Level2InterruptVector.text));
+    . = 0x1c0;
+    KEEP(*(.Level3InterruptVector.text));
+    . = 0x200;
+    KEEP(*(.Level4InterruptVector.text));
+    . = 0x240;
+    KEEP(*(.Level5InterruptVector.text));
+    . = 0x280;
+    KEEP(*(.DebugExceptionVector.text));
+    . = 0x2c0;
+    KEEP(*(.NMIExceptionVector.text));
+    . = 0x300;
+    KEEP(*(.KernelExceptionVector.text));
+    . = 0x340;
+    KEEP(*(.UserExceptionVector.text));
+    . = 0x3C0;
+    KEEP(*(.DoubleExceptionVector.text));
+    . = 0x400;
+    _invalid_pc_placeholder = ABSOLUTE(.);
+    *(.*Vector.literal)
+    *(.UserEnter.literal);
+    *(.UserEnter.text);
+    . = ALIGN (16);
+    *(.entry.text)
+    *(.init.literal)
+    *(.init)
+    _init_end = ABSOLUTE(.);
+    _iram_start = ABSOLUTE(.);
+  } > iram0_0_seg AT > FLASH
+  .iram0.text : ALIGN(4)
+  {
+    _iram_text_start = ABSOLUTE(.);
+    *(.iram1 .iram1.*)
+    *(.iram0.literal .iram.literal .iram.text.literal .iram0.text .iram.text)
+    *libarch__xtensa__core.a:(.literal .text .literal.* .text.*)
+    *libarch__common.a:(.literal .text .literal.* .text.*)
+    *libkernel.a:(.literal .text .literal.* .text.*)
+    *libgcc.a:lib2funcs.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:cbprintf_packaged.*(.literal .text .literal.* .text.*)
+    *libdrivers__flash.a:flash_esp32.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:windowspill_asm.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:log_noos.*(.literal .text .literal.* .text.*)
+    *libdrivers__timer.a:xtensa_sys_timer.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:log_core.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:cbprintf_complete.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:printk.*(.literal.printk .literal.vprintk .literal.char_out .text.printk .text.vprintk .text.char_out)
+    *libzephyr.a:log_msg.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:log_list.*(.literal .text .literal.* .text.*)
+    *libdrivers__console.a:uart_console.*(.literal.console_out .text.console_out)
+    *libzephyr.a:log_output.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:log_backend_uart.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:log_minimal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:loader.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:soc_flash_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:console_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:soc_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:hw_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:soc_random.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_mmu_map.*(.literal .literal.* .text .text.*)
+    *libphy.a:(.phyiram .phyiram.*)
+    *libgcov.a:(.literal .text .literal.* .text.*)
+    *librtc.a:(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp32s3-mp.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_flash.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_mmap.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:mmu_psram_flash.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_psram_impl_ap_quad.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_psram_impl_octal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:efuse_hal.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:mmu_hal.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:spi_flash_hal_iram.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:spi_flash_encrypt_hal_iram.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:cache_hal.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:ledc_hal_iram.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:i2c_hal_iram.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:wdt_hal_iram.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:systimer_hal.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:spi_flash_hal_gpspi.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:lldesc.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_boya.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_gd.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_generic.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_issi.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_mxic.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_mxic_opi.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_th.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_chip_winbond.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:memspi_host_driver.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:flash_brownout_hook.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_wrap.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_hpm_enable.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_oct_flash_init.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:flash_ops.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_os_func_app.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_os_func_noos.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_flash_api.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_err.*(.literal .literal.* .text .text.*)
+    *(.literal.esp_system_abort .text.esp_system_abort)
+    *(.literal.esp_restart_noos .text.esp_restart_noos)
+    *(.literal.esp_system_reset_modules_on_exit .text.esp_system_reset_modules_on_exit)
+    *(.literal.esp_cpu_stall .text.esp_cpu_stall)
+    *(.literal.esp_cpu_unstall .text.esp_cpu_unstall)
+    *(.literal.esp_cpu_reset .text.esp_cpu_reset)
+    *(.literal.esp_cpu_wait_for_intr .text.esp_cpu_wait_for_intr)
+    *(.literal.esp_cpu_compare_and_set .text.esp_cpu_compare_and_set)
+    *libzephyr.a:esp_gpio_reserve.*(.literal .literal.* .text .text.*)
+    *(.literal.rtc_vddsdio_get_config .text.rtc_vddsdio_get_config)
+    *(.literal.rtc_vddsdio_set_config .text.rtc_vddsdio_set_config)
+    *libzephyr.a:esp_memory_utils.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:gpio_hal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:gpio.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:adc_oneshot_hal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:adc_hal_common.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:adc_hal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:uart_hal_iram.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_rom_print.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:clk_utils.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:rtc_clk.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:periph_ctrl.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:rtc_clk_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:rtc_sleep.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:sleep_cache.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:rtc_time.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:systimer.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:mspi_timing_config.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:mspi_timing_tuning.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:mspi_timing_by_mspi_delay.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:regi2c_ctrl.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:sar_periph_ctrl_common.*(.literal .text .literal.* .text.*)
+    *(.literal.sar_periph_ctrl_power_enable .text.sar_periph_ctrl_power_enable)
+    *libzephyr.a:esp_rom_cache_esp32s2_esp32s3.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:cache_utils.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_rom_spiflash.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_rom_sys.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_rom_systimer.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_rom_wdt.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_rom_efuse.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_cache_utils.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_cache_msync.*(.literal .literal.* .text .text.*)
+    . = ALIGN(4);
+  } > iram0_0_seg AT > FLASH
+  .loader.text :
+  {
+    . = ALIGN(4);
+    _loader_text_start = ABSOLUTE(.);
+    *libzephyr.a:bootloader_clock_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_wdt.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_flash.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_flash_config_esp32s3.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_clock_loader.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_efuse.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_utility.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_sha.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:bootloader_panic.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_image_format.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_encrypt.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_encryption_secure_features.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_partitions.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:flash_qio_mode.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:spi_flash_hal.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:spi_flash_hal_common.*(.literal .literal.* .text .text.*)
+    *libzephyr.a:esp_flash_spi_init.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:secure_boot.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:secure_boot_secure_features.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:secure_boot_signatures_bootloader.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_efuse_table.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_efuse_fields.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_efuse_api.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_efuse_utility.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:esp_efuse_api_key_esp32xx.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:mpu_hal.*(.literal .text .literal.* .text.*)
+    *libzephyr.a:cpu_region_protect.*(.literal .text .literal.* .text.*)
+    *(.fini.literal)
+    *(.fini)
+    . = ALIGN(4);
+    _loader_text_end = ABSOLUTE(.);
+  } > iram0_0_seg AT > FLASH
+  .iram0.text_end (NOLOAD) :
+  {
+    . = ALIGN(4) + 16;
+    _iram_text_end = ABSOLUTE(.);
+  } > iram0_0_seg
+  .iram0.data :
+  {
+    . = ALIGN(4);
+    _iram_data_start = ABSOLUTE(.);
+    *(.iram.data)
+    *(.iram.data*)
+    _iram_data_end = ABSOLUTE(.);
+  } > iram0_0_seg AT > FLASH
+  .iram0.bss (NOLOAD) :
+  {
+    . = ALIGN(4);
+    _iram_bss_start = ABSOLUTE(.);
+    *(.iram.bss)
+    *(.iram.bss*)
+    _iram_bss_end = ABSOLUTE(.);
+    . = ALIGN(4);
+    _iram_end = ABSOLUTE(.);
+  } > iram0_0_seg
+  .dram0.dummy (NOLOAD):
+  {
+    . = ORIGIN(dram0_0_seg) + (MAX(_iram_end, ((1077346304) + (32768))) - ((1077346304) + (32768)));
+    . = ALIGN(16);
+  } > dram0_0_seg
+  .dram0.data :
+  {
+    . = ALIGN (8);
+    _data_start = ABSOLUTE(.);
+    __data_start = ABSOLUTE(.);
+    _btdm_data_start = ABSOLUTE(.);
+    *libbtdm_app.a:(.data .data.*)
+    . = ALIGN (4);
+    _btdm_data_end = ABSOLUTE(.);
+    *(.data)
+    *(.data.*)
+    *(.gnu.linkonce.d.*)
+    *(.data1)
+    *(.sdata)
+    *(.sdata.*)
+    *(.gnu.linkonce.s.*)
+    *(.sdata2)
+    *(.sdata2.*)
+    *(.gnu.linkonce.s2.*)
+    *(.srodata)
+    *(.srodata.*)
+    *libarch__xtensa__core.a:(.rodata .rodata.*)
+    *libkernel.a:fatal.*(.rodata .rodata.*)
+    *libkernel.a:init.*(.rodata .rodata.*)
+    *libzephyr.a:cbprintf_complete.*(.rodata .rodata.*)
+    *libzephyr.a:log_core.*(.rodata .rodata.*)
+    *libzephyr.a:log_backend_uart.*(.rodata .rodata.*)
+    *libzephyr.a:log_output.*(.rodata .rodata.*)
+    *libzephyr.a:log_minimal.*(.rodata .rodata.*)
+    *libzephyr.a:loader.*(.rodata .rodata.*)
+    *libzephyr.a:flash_init.*(.rodata .rodata.*)
+    *libzephyr.a:soc_flash_init.*(.rodata .rodata.*)
+    *libzephyr.a:console_init.*(.rodata .rodata.*)
+    *libzephyr.a:soc_init.*(.rodata .rodata.*)
+    *libzephyr.a:hw_init.*(.rodata .rodata.*)
+    *libzephyr.a:soc_random.*(.rodata .rodata.*)
+    *libdrivers__serial.a:uart_esp32.*(.rodata .rodata.*)
+    *libdrivers__flash.a:flash_esp32.*(.rodata .rodata.*)
+    *libzephyr.a:esp_mmu_map.*(.rodata .rodata.*)
+    *libzephyr.a:esp32s3-mp.*(.rodata .rodata.*)
+    *libzephyr.a:bootloader_flash.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:flash_mmap.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:mmu_psram_flash.*(.rodata .rodata.*)
+    *libzephyr.a:esp_psram_impl_octal.*(.rodata .rodata.*)
+    *libzephyr.a:esp_psram_impl_ap_quad.*(.rodata .rodata.*)
+    *libzephyr.a:efuse_hal.*(.rodata .rodata.*)
+    *libzephyr.a:mmu_hal.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_hal_iram.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_encrypt_hal_iram.*(.rodata .rodata.*)
+    *libzephyr.a:cache_hal.*(.rodata .rodata.*)
+    *libzephyr.a:ledc_hal_iram.*(.rodata .rodata.*)
+    *libzephyr.a:i2c_hal_iram.*(.rodata .rodata.*)
+    *libzephyr.a:wdt_hal_iram.*(.rodata .rodata.*)
+    *libzephyr.a:systimer_hal.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_hal_gpspi.*(.rodata .rodata.*)
+    *libzephyr.a:lldesc.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_boya.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_gd.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_generic.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_issi.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_mxic.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_mxic_opi.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_th.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_chip_winbond.*(.rodata .rodata.*)
+    *libzephyr.a:memspi_host_driver.*(.rodata .rodata.*)
+    *libzephyr.a:flash_brownout_hook.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_wrap.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_hpm_enable.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_oct_flash_init.*(.rodata .rodata.*)
+    *libzephyr.a:flash_qio_mode.*(.rodata .rodata.*)
+    *libzephyr.a:flash_ops.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_os_func_app.*(.rodata .rodata.*)
+    *libzephyr.a:spi_flash_os_func_noos.*(.rodata .rodata.*)
+    *libzephyr.a:esp_flash_api.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:esp_cache_utils.*(.rodata .rodata.*)
+    *libzephyr.a:esp_cache_msync.*(.rodata .rodata.*)
+    *(.rodata.esp_cpu_stall)
+    *(.rodata.esp_cpu_unstall)
+    *(.rodata.esp_cpu_reset)
+    *(.rodata.esp_cpu_wait_for_intr)
+    *(.rodata.esp_cpu_compare_and_set)
+    *libzephyr.a:esp_gpio_reserve.*(.rodata .rodata.*)
+    *(.rodata.rtc_vddsdio_get_config)
+    *(.rodata.rtc_vddsdio_set_config)
+    *libzephyr.a:esp_memory_utils.*(.rodata .rodata.*)
+    *libzephyr.a:clk_utils.*(.rodata .rodata.*)
+    *libzephyr.a:rtc_clk.*(.rodata .rodata.*)
+    *libzephyr.a:rtc_clk_init.*(.rodata .rodata.*)
+    *libzephyr.a:systimer.*(.rodata .rodata.*)
+    *libzephyr.a:mspi_timing_config.*(.rodata .rodata.*)
+    *libzephyr.a:mspi_timing_tuning.*(.rodata .rodata.*)
+    *libzephyr.a:mspi_timing_by_mspi_delay.*(.rodata .rodata.*)
+    *(.rodata.sar_periph_ctrl_power_enable)
+    *(.rodata.GPIO_HOLD_MASK)
+    *libzephyr.a:esp_rom_cache_esp32s2_esp32s3.*(.rodata .rodata.*)
+    *libzephyr.a:cache_utils.*(.rodata .rodata.*)
+    *libzephyr.a:esp_rom_spiflash.*(.rodata .rodata.*)
+    *libzephyr.a:esp_rom_sys.*(.rodata .rodata.*)
+    *libzephyr.a:esp_rom_systimer.*(.rodata .rodata.*)
+    *libzephyr.a:esp_rom_wdt.*(.rodata .rodata.*)
+    *libzephyr.a:esp_rom_efuse.*(.rodata .rodata.*)
+    *libzephyr.a:esp_err.*(.rodata .rodata.*)
+    *(.rodata.esp_system_abort)
+    *(.rodata.esp_restart_noos)
+    *(.rodata.esp_system_reset_modules_on_exit)
+    *libphy.a:(.rodata .rodata.*)
+    . = ALIGN(4);
+    . = ALIGN(4);
+    KEEP(*(.jcr))
+    *(.dram1 .dram1.*)
+    . = ALIGN(4);
+  } > dram0_0_seg AT > FLASH
+  .loader.data :
+  {
+    . = ALIGN(4);
+    _loader_data_start = ABSOLUTE(.);
+    *libzephyr.a:bootloader_clock_init.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:bootloader_wdt.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:bootloader_flash.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:bootloader_efuse.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:cpu_util.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:clk.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:esp_clk.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:esp_clk_tree.*(.rodata .rodata.* .srodata .srodata.*)
+    *libzephyr.a:cpu_region_protect.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:spi_flash_hal.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:spi_flash_hal_common.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    *libzephyr.a:esp_flash_spi_init.*(.rodata .rodata.* .sdata2 .sdata2.* .srodata .srodata.*)
+    . = ALIGN(4);
+    _loader_data_end = ABSOLUTE(.);
+  } > dram0_0_seg AT > FLASH
+ sw_isr_table : ALIGN_WITH_INPUT
  {
- *(.plt)
- }
-    /DISCARD/ :
+  . = ALIGN(4);
+  *(.gnu.linkonce.sw_isr_table*)
+ } > dram0_0_seg AT > FLASH
+        device_states : ALIGN_WITH_INPUT
+        {
+  . = ALIGN(4);
+                __device_states_start = .;
+  KEEP(*(".z_devstate"));
+  KEEP(*(".z_devstate.*"));
+                __device_states_end = .;
+  . = ALIGN(4);
+        } > dram0_0_seg AT > FLASH
+ log_mpsc_pbuf_area : ALIGN_WITH_INPUT { _log_mpsc_pbuf_list_start = .; *(SORT_BY_NAME(._log_mpsc_pbuf.static.*)); _log_mpsc_pbuf_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_msg_ptr_area : ALIGN_WITH_INPUT { _log_msg_ptr_list_start = .; KEEP(*(SORT_BY_NAME(._log_msg_ptr.static.*))); _log_msg_ptr_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_dynamic_area : ALIGN_WITH_INPUT { _log_dynamic_list_start = .; KEEP(*(SORT_BY_NAME(._log_dynamic.static.*))); _log_dynamic_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_timer_area : ALIGN_WITH_INPUT { _k_timer_list_start = .; *(SORT_BY_NAME(._k_timer.static.*)); _k_timer_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_mem_slab_area : ALIGN_WITH_INPUT { _k_mem_slab_list_start = .; *(SORT_BY_NAME(._k_mem_slab.static.*)); _k_mem_slab_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_heap_area : ALIGN_WITH_INPUT { _k_heap_list_start = .; *(SORT_BY_NAME(._k_heap.static.*)); _k_heap_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_mutex_area : ALIGN_WITH_INPUT { _k_mutex_list_start = .; *(SORT_BY_NAME(._k_mutex.static.*)); _k_mutex_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_stack_area : ALIGN_WITH_INPUT { _k_stack_list_start = .; *(SORT_BY_NAME(._k_stack.static.*)); _k_stack_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_msgq_area : ALIGN_WITH_INPUT { _k_msgq_list_start = .; *(SORT_BY_NAME(._k_msgq.static.*)); _k_msgq_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_mbox_area : ALIGN_WITH_INPUT { _k_mbox_list_start = .; *(SORT_BY_NAME(._k_mbox.static.*)); _k_mbox_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_pipe_area : ALIGN_WITH_INPUT { _k_pipe_list_start = .; *(SORT_BY_NAME(._k_pipe.static.*)); _k_pipe_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_sem_area : ALIGN_WITH_INPUT { _k_sem_list_start = .; *(SORT_BY_NAME(._k_sem.static.*)); _k_sem_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_event_area : ALIGN_WITH_INPUT { _k_event_list_start = .; *(SORT_BY_NAME(._k_event.static.*)); _k_event_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_queue_area : ALIGN_WITH_INPUT { _k_queue_list_start = .; *(SORT_BY_NAME(._k_queue.static.*)); _k_queue_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_fifo_area : ALIGN_WITH_INPUT { _k_fifo_list_start = .; *(SORT_BY_NAME(._k_fifo.static.*)); _k_fifo_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_lifo_area : ALIGN_WITH_INPUT { _k_lifo_list_start = .; *(SORT_BY_NAME(._k_lifo.static.*)); _k_lifo_list_end = .;; } > dram0_0_seg AT > FLASH
+ k_condvar_area : ALIGN_WITH_INPUT { _k_condvar_list_start = .; *(SORT_BY_NAME(._k_condvar.static.*)); _k_condvar_list_end = .;; } > dram0_0_seg AT > FLASH
+ sys_mem_blocks_ptr_area : ALIGN_WITH_INPUT { _sys_mem_blocks_ptr_list_start = .; *(SORT_BY_NAME(._sys_mem_blocks_ptr.static.*)); _sys_mem_blocks_ptr_list_end = .;; } > dram0_0_seg AT > FLASH
+ net_buf_pool_area : ALIGN_WITH_INPUT { _net_buf_pool_list_start = .; KEEP(*(SORT_BY_NAME(._net_buf_pool.static.*))); _net_buf_pool_list_end = .;; } > dram0_0_seg AT > FLASH
+         
+ log_strings_area : ALIGN_WITH_INPUT { _log_strings_list_start = .; KEEP(*(SORT_BY_NAME(._log_strings.static.*))); _log_strings_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_stmesp_ptr_area : ALIGN_WITH_INPUT { _log_stmesp_ptr_list_start = .; KEEP(*(SORT_BY_NAME(._log_stmesp_ptr.static.*))); _log_stmesp_ptr_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_stmesp_str_area : ALIGN_WITH_INPUT { _log_stmesp_str_list_start = .; KEEP(*(SORT_BY_NAME(._log_stmesp_str.static.*))); _log_stmesp_str_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_const_area : ALIGN_WITH_INPUT { _log_const_list_start = .; KEEP(*(SORT_BY_NAME(._log_const.static.*))); _log_const_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_backend_area : ALIGN_WITH_INPUT { _log_backend_list_start = .; KEEP(*(SORT_BY_NAME(._log_backend.static.*))); _log_backend_list_end = .;; } > dram0_0_seg AT > FLASH
+ log_link_area : ALIGN_WITH_INPUT { _log_link_list_start = .; KEEP(*(SORT_BY_NAME(._log_link.static.*))); _log_link_list_end = .;; } > dram0_0_seg AT > FLASH
+         
+  .dram0.data_end :
+  {
+    __data_end = ABSOLUTE(.);
+    _data_end = ABSOLUTE(.);
+  } > dram0_0_seg AT > FLASH
+  .dram0.noinit (NOLOAD):
+  {
+    . = ALIGN(4);
+    __dram_noinit_start = ABSOLUTE(.);
+    *(.noinit)
+    *(.noinit.*)
+    __dram_noinit_end = ABSOLUTE(.);
+    . = ALIGN(4) ;
+  } > dram0_0_seg
+  .dram0.bss (NOLOAD) :
+  {
+    . = ALIGN (8);
+    _bss_start = ABSOLUTE(.);
+    __bss_start = ABSOLUTE(.);
+    _btdm_bss_start = ABSOLUTE(.);
+    *libbtdm_app.a:(.bss .bss.* COMMON)
+    . = ALIGN (4);
+    _btdm_bss_end = ABSOLUTE(.);
+    *(.dynsbss)
+    *(.sbss)
+    *(.sbss.*)
+    *(.gnu.linkonce.sb.*)
+    *(.scommon)
+    *(.sbss2)
+    *(.sbss2.*)
+    *(.gnu.linkonce.sb2.*)
+    *(.dynbss)
+    *(.bss)
+    *(.bss.*)
+    *(.share.mem)
+    *(.gnu.linkonce.b.*)
+    *(COMMON)
+    . = ALIGN (8);
+    _bss_end = ABSOLUTE(.);
+    __bss_end = ABSOLUTE(.);
+  } > dram0_0_seg
+  _image_ram_start = _init_start - 0x6f0000;
+    .last_ram_section (NOLOAD) : ALIGN_WITH_INPUT
+    {
+ _image_ram_end = .;
+ _image_ram_size = _image_ram_end - _image_ram_start;
+ _end = .;
+ z_mapped_end = .;
+    } > dram0_0_seg
+  ASSERT(((_end - ORIGIN(dram0_0_seg)) <= LENGTH(dram0_0_seg)), "DRAM segment data does not fit.")
+  _image_irom_start = LOADADDR(.text);
+  _image_irom_size = LOADADDR(.text) + SIZEOF(.text) - _image_irom_start;
+  _image_irom_vaddr = ADDR(.text);
+  .text_dummy (NOLOAD) :
+  {
+    . = ALIGN(0x10000);
+  } > FLASH
+  .text : ALIGN(0x10)
+  {
+    _stext = .;
+    _instruction_reserved_start = ABSOLUTE(.);
+    _text_start = ABSOLUTE(.);
+    __text_region_start = ABSOLUTE(.);
+    __rom_region_start = ABSOLUTE(.);
+    *libnet80211.a:(.wifi0iram .wifi0iram.*)
+    *libpp.a:(.wifi0iram .wifi0iram.*)
+    *libnet80211.a:(.wifirxiram .wifirxiram.*)
+    *libpp.a:(.wifirxiram .wifirxiram.*)
+    *libnet80211.a:(.wifislpiram .wifislpiram.*)
+    *libpp.a:(.wifislpiram .wifislpiram.*)
+    *libpp.a:(.wifiorslpiram .wifiorslpiram.*)
+    *libnet80211.a:(.wifislprxiram .wifislprxiram.*)
+    *libpp.a:(.wifislprxiram .wifislprxiram.*)
+    *libnet80211.a:(.wifiextrairam .wifiextrairam.*)
+    *libpp.a:(.wifiextrairam .wifiextrairam.*)
+    *libcoexist.a:(.coexiram .coexiram.*)
+    *(.literal.coex_pti_get_wrapper .text.coex_pti_get_wrapper)
+    *(.literal.wifi_clock_enable_wrapper .text.wifi_clock_enable_wrapper)
+    *(.literal.wifi_clock_disable_wrapper .text.wifi_clock_disable_wrapper)
+    *(.literal.esp_phy_enable .text.esp_phy_enable)
+    *(.literal.esp_phy_disable .text.esp_phy_disable)
+    *(.literal.esp_wifi_bt_power_domain_off .text.esp_wifi_bt_power_domain_off)
+    *(.literal.wifi_apb80m_request .text.wifi_apb80m_request)
+    *(.literal.wifi_apb80m_release .text.wifi_apb80m_release)
+    *(.stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
+    *(.irom0.text)
+    *(.fini.literal)
+    *(.fini)
+    *(.gnu.version)
+    *(.literal .text .literal.* .text.*)
+    . += 16;
+    . = ALIGN(0x10);
+    _text_end = ABSOLUTE(.);
+    _instruction_reserved_end = ABSOLUTE(.);
+    __text_region_end = ABSOLUTE(.);
+    __rom_region_end = ABSOLUTE(.);
+    _etext = .;
+  } > irom0_0_seg AT > FLASH
+  .flash.rodata_dummy (NOLOAD):
+  {
+    _flash_rodata_dummy_start = ABSOLUTE(.);
+    . += SIZEOF(.text);
+    . = ALIGN(0x10000);
+  } > drom0_0_seg
+  _image_drom_start = LOADADDR(.flash.rodata);
+  _image_drom_size = LOADADDR(.flash.rodata_end) + SIZEOF(.flash.rodata_end) - _image_drom_start;
+  _image_drom_vaddr = ADDR(.flash.rodata);
+  .flash.rodata : ALIGN(0x10000)
+  {
+    _image_rodata_start = ABSOLUTE(.);
+    _rodata_reserved_start = ABSOLUTE(.);
+    _rodata_start = ABSOLUTE(.);
+    __rodata_region_start = ABSOLUTE(.);
+    . = ALIGN(4);
+    *(.irom1.text)
+    *(.gnu.linkonce.r.*)
+    *(.rodata)
+    *(.rodata.*)
+    *(.rodata1)
+    __XT_EXCEPTION_TABLE_ = ABSOLUTE(.);
+    *(.xt_except_table)
+    *(.gcc_except_table .gcc_except_table.*)
+    *(.gnu.linkonce.e.*)
+    *(.gnu.version_r)
+    . = (. + 3) & ~ 3;
+    __eh_frame = ABSOLUTE(.);
+    KEEP(*(.eh_frame))
+    . = (. + 7) & ~ 3;
+    __XT_EXCEPTION_DESCS_ = ABSOLUTE(.);
+    *(.xt_except_desc)
+    *(.gnu.linkonce.h.*)
+    __XT_EXCEPTION_DESCS_END__ = ABSOLUTE(.);
+    *(.xt_except_desc_end)
+    *(.dynamic)
+    *(.gnu.version_d)
+    . = ALIGN(4);
+    __rodata_region_end = ABSOLUTE(.);
+    _lit4_start = ABSOLUTE(.);
+    *(*.lit4)
+    *(.lit4.*)
+    *(.gnu.linkonce.lit4.*)
+    _lit4_end = ABSOLUTE(.);
+    . = ALIGN(4);
+    *(.rodata_wlog)
+    *(.rodata_wlog*)
+    . = ALIGN(4);
+  } > drom0_0_seg AT > FLASH
+ PROVIDE(__eh_frame_start = 0);
+ PROVIDE(__eh_frame_end = 0);
+ PROVIDE(__eh_frame_hdr_start = 0);
+ PROVIDE(__eh_frame_hdr_end = 0);
+ /DISCARD/ : { *(.eh_frame) }
+ init_array : ALIGN_WITH_INPUT
  {
- *(.iplt)
- }
-   
- __rom_region_start = (0x8000000 + 0x0);
-    rom_start :
- {
-HIDDEN(__rom_start_address = .);
-FILL(0x00);
-. += 0x0 - (. - __rom_start_address);
-. = ALIGN(4);
-. = ALIGN( 1 << LOG2CEIL(4 * 32) );
-. = ALIGN( 1 << LOG2CEIL(4 * (16 + 41)) );
-_vector_start = .;
-KEEP(*(.exc_vector_table))
-KEEP(*(".exc_vector_table.*"))
-KEEP(*(.vectors))
-_vector_end = .;
-. = ALIGN(4);
-KEEP(*(.gnu.linkonce.irq_vector_table*))
- _vector_end = .;
- } > FLASH
-    text :
- {
- __text_region_start = .;
- *(.text)
- *(".text.*")
- *(.gnu.linkonce.t.*)
- *(.glue_7t) *(.glue_7) *(.vfp11_veneer) *(.v4_bx)
- . = ALIGN(4);
- } > FLASH
- __text_region_end = .;
- .ARM.exidx :
- {
- __exidx_start = .;
- *(.ARM.exidx* gnu.linkonce.armexidx.*)
- __exidx_end = .;
- } > FLASH
- __rodata_region_start = .;
- initlevel :
+  __zephyr_init_array_start = .;
+  KEEP (*(SORT_BY_INIT_PRIORITY(.init_array.*)
+   SORT_BY_INIT_PRIORITY(.ctors.*)))
+  KEEP (*(.init_array .ctors))
+  __zephyr_init_array_end = .;
+ } > drom0_0_seg AT > FLASH
+ ASSERT(__zephyr_init_array_start == __zephyr_init_array_end,
+        "GNU-style constructors required but STATIC_INIT_GNU not enabled")
+ initlevel : ALIGN_WITH_INPUT
  {
   __init_start = .;
   __init_EARLY_start = .; KEEP(*(SORT(.z_init_EARLY_P_?_*))); KEEP(*(SORT(.z_init_EARLY_P_??_*))); KEEP(*(SORT(.z_init_EARLY_P_???_*)));
@@ -86,14 +676,9 @@ KEEP(*(.gnu.linkonce.irq_vector_table*))
   __init_APPLICATION_start = .; KEEP(*(SORT(.z_init_APPLICATION_P_?_*))); KEEP(*(SORT(.z_init_APPLICATION_P_??_*))); KEEP(*(SORT(.z_init_APPLICATION_P_???_*)));
   __init_SMP_start = .; KEEP(*(SORT(.z_init_SMP_P_?_*))); KEEP(*(SORT(.z_init_SMP_P_??_*))); KEEP(*(SORT(.z_init_SMP_P_???_*)));
   __init_end = .;
- } > FLASH
- device_area : { _device_list_start = .; KEEP(*(SORT(._device.static.*_?_*))); KEEP(*(SORT(._device.static.*_??_*))); KEEP(*(SORT(._device.static.*_???_*))); KEEP(*(SORT(._device.static.*_????_*))); KEEP(*(SORT(._device.static.*_?????_*))); _device_list_end = .;; } > FLASH
- sw_isr_table :
- {
-  . = ALIGN(4);
-  *(.gnu.linkonce.sw_isr_table*)
- } > FLASH
- initlevel_error :
+ } > drom0_0_seg AT > FLASH
+ device_area : ALIGN_WITH_INPUT { _device_list_start = .; KEEP(*(SORT(._device.static.*_?_*))); KEEP(*(SORT(._device.static.*_??_*))); KEEP(*(SORT(._device.static.*_???_*))); KEEP(*(SORT(._device.static.*_????_*))); KEEP(*(SORT(._device.static.*_?????_*))); _device_list_end = .;; } > drom0_0_seg AT > FLASH
+ initlevel_error : ALIGN_WITH_INPUT
  {
   KEEP(*(SORT(.z_init_*)))
  }
@@ -103,23 +688,21 @@ KEEP(*(.gnu.linkonce.irq_vector_table*))
   __app_shmem_regions_start = .;
   KEEP(*(SORT(.app_regions.*)));
   __app_shmem_regions_end = .;
- } > FLASH
- k_p4wq_initparam_area : { _k_p4wq_initparam_list_start = .; KEEP(*(SORT_BY_NAME(._k_p4wq_initparam.static.*))); _k_p4wq_initparam_list_end = .;; } > FLASH
- k_kernel_init_pre_entry_area : { _k_kernel_init_pre_entry_list_start = .; KEEP(*(SORT_BY_NAME(._k_kernel_init_pre_entry.static.*))); _k_kernel_init_pre_entry_list_end = .;; } > FLASH
- k_kernel_init_post_entry_area : { _k_kernel_init_post_entry_list_start = .; KEEP(*(SORT_BY_NAME(._k_kernel_init_post_entry.static.*))); _k_kernel_init_post_entry_list_end = .;; } > FLASH
- _static_thread_data_area : { __static_thread_data_list_start = .; KEEP(*(SORT_BY_NAME(.__static_thread_data.static.*))); __static_thread_data_list_end = .;; } > FLASH
+ } > drom0_0_seg AT > FLASH
+ k_p4wq_initparam_area : ALIGN_WITH_INPUT { _k_p4wq_initparam_list_start = .; KEEP(*(SORT_BY_NAME(._k_p4wq_initparam.static.*))); _k_p4wq_initparam_list_end = .;; } > drom0_0_seg AT > FLASH
+ k_kernel_init_pre_entry_area : ALIGN_WITH_INPUT { _k_kernel_init_pre_entry_list_start = .; KEEP(*(SORT_BY_NAME(._k_kernel_init_pre_entry.static.*))); _k_kernel_init_pre_entry_list_end = .;; } > drom0_0_seg AT > FLASH
+ k_kernel_init_post_entry_area : ALIGN_WITH_INPUT { _k_kernel_init_post_entry_list_start = .; KEEP(*(SORT_BY_NAME(._k_kernel_init_post_entry.static.*))); _k_kernel_init_post_entry_list_end = .;; } > drom0_0_seg AT > FLASH
+ _static_thread_data_area : ALIGN_WITH_INPUT { __static_thread_data_list_start = .; KEEP(*(SORT_BY_NAME(.__static_thread_data.static.*))); __static_thread_data_list_end = .;; } > drom0_0_seg AT > FLASH
  device_deps : ALIGN_WITH_INPUT
  {
 __device_deps_start = .;
 KEEP(*(SORT(.__device_deps_pass2*)));
 __device_deps_end = .;
- } > FLASH
-device_api_area : SUBALIGN(4)
+ } > drom0_0_seg AT > FLASH
+device_api_area : ALIGN_WITH_INPUT
 {
  _gpio_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._gpio_driver_api.static.*))); _gpio_driver_api_list_end = .;;
  _gpio_driver_api_ext_end = .;
- _reset_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._reset_driver_api.static.*))); _reset_driver_api_list_end = .;;
- _reset_driver_api_ext_end = .;
  _shared_irq_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._shared_irq_driver_api.static.*))); _shared_irq_driver_api_list_end = .;;
  _shared_irq_driver_api_ext_end = .;
  _audio_codec_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._audio_codec_driver_api.static.*))); _audio_codec_driver_api_list_end = .;;
@@ -250,6 +833,8 @@ device_api_area : SUBALIGN(4)
  _regulator_parent_driver_api_ext_end = .;
  _regulator_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._regulator_driver_api.static.*))); _regulator_driver_api_list_end = .;;
  _regulator_driver_api_ext_end = .;
+ _reset_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._reset_driver_api.static.*))); _reset_driver_api_list_end = .;;
+ _reset_driver_api_ext_end = .;
  _retained_mem_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._retained_mem_driver_api.static.*))); _retained_mem_driver_api_list_end = .;;
  _retained_mem_driver_api_ext_end = .;
  _rtc_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._rtc_driver_api.static.*))); _rtc_driver_api_list_end = .;;
@@ -324,227 +909,120 @@ device_api_area : SUBALIGN(4)
  _ivshmem_driver_api_ext_end = .;
  _ethphy_driver_api_list_start = .; KEEP(*(SORT_BY_NAME(._ethphy_driver_api.static.*))); _ethphy_driver_api_list_end = .;;
  _ethphy_driver_api_ext_end = .;
-} > FLASH
-ztest :
+} > drom0_0_seg AT > FLASH
+ztest : ALIGN_WITH_INPUT
 {
  _ztest_expected_result_entry_list_start = .; KEEP(*(SORT_BY_NAME(._ztest_expected_result_entry.static.*))); _ztest_expected_result_entry_list_end = .;;
  _ztest_suite_node_list_start = .; KEEP(*(SORT_BY_NAME(._ztest_suite_node.static.*))); _ztest_suite_node_list_end = .;;
  _ztest_unit_test_list_start = .; KEEP(*(SORT_BY_NAME(._ztest_unit_test.static.*))); _ztest_unit_test_list_end = .;;
  _ztest_param_inst_list_start = .; KEEP(*(SORT_BY_NAME(._ztest_param_inst.static.*))); _ztest_param_inst_list_end = .;;
  _ztest_test_rule_list_start = .; KEEP(*(SORT_BY_NAME(._ztest_test_rule.static.*))); _ztest_test_rule_list_end = .;;
-} > FLASH
- init_array :
- {
-  __zephyr_init_array_start = .;
-  KEEP (*(SORT_BY_INIT_PRIORITY(.init_array.*)
-   SORT_BY_INIT_PRIORITY(.ctors.*)))
-  KEEP (*(.init_array .ctors))
-  __zephyr_init_array_end = .;
- } > FLASH
- ASSERT(__zephyr_init_array_start == __zephyr_init_array_end,
-        "GNU-style constructors required but STATIC_INIT_GNU not enabled")
- bt_l2cap_fixed_chan_area : { _bt_l2cap_fixed_chan_list_start = .; KEEP(*(SORT_BY_NAME(._bt_l2cap_fixed_chan.static.*))); _bt_l2cap_fixed_chan_list_end = .;; } > FLASH
- bt_gatt_service_static_area : { _bt_gatt_service_static_list_start = .; KEEP(*(SORT_BY_NAME(._bt_gatt_service_static.static.*))); _bt_gatt_service_static_list_end = .;; } > FLASH
- log_strings_area : { _log_strings_list_start = .; KEEP(*(SORT_BY_NAME(._log_strings.static.*))); _log_strings_list_end = .;; } > FLASH
- log_stmesp_ptr_area : { _log_stmesp_ptr_list_start = .; KEEP(*(SORT_BY_NAME(._log_stmesp_ptr.static.*))); _log_stmesp_ptr_list_end = .;; } > FLASH
- log_stmesp_str_area : { _log_stmesp_str_list_start = .; KEEP(*(SORT_BY_NAME(._log_stmesp_str.static.*))); _log_stmesp_str_list_end = .;; } > FLASH
- log_const_area : { _log_const_list_start = .; KEEP(*(SORT_BY_NAME(._log_const.static.*))); _log_const_list_end = .;; } > FLASH
- log_backend_area : { _log_backend_list_start = .; KEEP(*(SORT_BY_NAME(._log_backend.static.*))); _log_backend_list_end = .;; } > FLASH
- log_link_area : { _log_link_list_start = .; KEEP(*(SORT_BY_NAME(._log_link.static.*))); _log_link_list_end = .;; } > FLASH
- tracing_backend_area : { _tracing_backend_list_start = .; KEEP(*(SORT_BY_NAME(._tracing_backend.static.*))); _tracing_backend_list_end = .;; } > FLASH
+} > drom0_0_seg AT > FLASH
+ bt_l2cap_fixed_chan_area : ALIGN_WITH_INPUT { _bt_l2cap_fixed_chan_list_start = .; KEEP(*(SORT_BY_NAME(._bt_l2cap_fixed_chan.static.*))); _bt_l2cap_fixed_chan_list_end = .;; } > drom0_0_seg AT > FLASH
+ bt_gatt_service_static_area : ALIGN_WITH_INPUT { _bt_gatt_service_static_list_start = .; KEEP(*(SORT_BY_NAME(._bt_gatt_service_static.static.*))); _bt_gatt_service_static_list_end = .;; } > drom0_0_seg AT > FLASH
+ tracing_backend_area : ALIGN_WITH_INPUT { _tracing_backend_list_start = .; KEEP(*(SORT_BY_NAME(._tracing_backend.static.*))); _tracing_backend_list_end = .;; } > drom0_0_seg AT > FLASH
  zephyr_dbg_info : ALIGN_WITH_INPUT
  {
   KEEP(*(".dbg_thread_info"));
- } > FLASH
- intc_table_area : { _intc_table_list_start = .; KEEP(*(SORT_BY_NAME(._intc_table.static.*))); _intc_table_list_end = .;; } > FLASH
+ } > drom0_0_seg AT > FLASH
  symbol_to_keep : ALIGN_WITH_INPUT
  {
   __symbol_to_keep_start = .;
   KEEP(*(SORT(.symbol_to_keep*)));
   __symbol_to_keep_end = .;
- } > FLASH
- shell_area : { _shell_list_start = .; KEEP(*(SORT_BY_NAME(._shell.static.*))); _shell_list_end = .;; } > FLASH
- shell_root_cmds_area : { _shell_root_cmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_root_cmds.static.*))); _shell_root_cmds_list_end = .;; } > FLASH
- shell_subcmds_area : { _shell_subcmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_subcmds.static.*))); _shell_subcmds_list_end = .;; } > FLASH
- shell_dynamic_subcmds_area : { _shell_dynamic_subcmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_dynamic_subcmds.static.*))); _shell_dynamic_subcmds_list_end = .;; } > FLASH
- shell_remote_area : { _shell_remote_list_start = .; KEEP(*(SORT_BY_NAME(._shell_remote.static.*))); _shell_remote_list_end = .;; } > FLASH
- cfb_font_area : { _cfb_font_list_start = .; KEEP(*(SORT_BY_NAME(._cfb_font.static.*))); _cfb_font_list_end = .;; } > FLASH
- tdata : ALIGN_WITH_INPUT
- {
-  *(.tdata .tdata.* .gnu.linkonce.td.*);
- } > FLASH
- tbss (NOLOAD) : ALIGN_WITH_INPUT
- {
-  *(.tbss .tbss.* .gnu.linkonce.tb.* .tcommon);
- } > FLASH
- PROVIDE(__tdata_start = LOADADDR(tdata));
- PROVIDE(__tdata_align = ALIGNOF(tdata));
- PROVIDE(__tdata_size = (SIZEOF(tdata) + __tdata_align - 1) & ~(__tdata_align - 1));
- PROVIDE(__tdata_end = __tdata_start + __tdata_size);
- PROVIDE(__tbss_align = ALIGNOF(tbss));
- PROVIDE(__tbss_start = ADDR(tbss));
- PROVIDE(__tbss_size = (SIZEOF(tbss) + __tbss_align - 1) & ~(__tbss_align - 1));
- PROVIDE(__tbss_end = __tbss_start + __tbss_size);
- PROVIDE(__tls_start = __tdata_start);
- PROVIDE(__tls_size = __tbss_end - __tdata_start);
- PROVIDE(__tls_end = __tbss_end);
-    rodata :
- {
- *(.rodata)
- *(".rodata.*")
- *(.gnu.linkonce.r.*)
- . = ALIGN(4);
- } > FLASH
- PROVIDE(__eh_frame_start = 0);
- PROVIDE(__eh_frame_end = 0);
- PROVIDE(__eh_frame_hdr_start = 0);
- PROVIDE(__eh_frame_hdr_end = 0);
- /DISCARD/ : { *(.eh_frame) }
- __rodata_region_end = .;
- . = ALIGN(_region_min_align);
- __rom_region_end = __rom_region_start + . - ADDR(rom_start);
- __rom_region_size = __rom_region_end - __rom_region_start;
-   
-    /DISCARD/ : {
- *(.got.plt)
- *(.igot.plt)
- *(.got)
- *(.igot)
- }
-   
- . = (536870912);
- . = ALIGN(_region_min_align);
- _image_ram_start = .;
-.ramfunc : ALIGN_WITH_INPUT
-{
- __ramfunc_region_start = .;
- . = ALIGN(_region_min_align);
- __ramfunc_start = .;
- *(.ramfunc)
- *(".ramfunc.*")
- . = ALIGN(_region_min_align);
- __ramfunc_end = .;
-} > RAM AT > FLASH
-__ramfunc_size = __ramfunc_end - __ramfunc_start;
-__ramfunc_load_start = LOADADDR(.ramfunc);
-   
-    datas : ALIGN_WITH_INPUT
- {
- __data_region_start = .;
- __data_start = .;
- *(.data)
- *(".data.*")
- *(".kernel.*")
- __data_end = .;
- } > RAM AT > FLASH
-    __data_size = __data_end - __data_start;
-    __data_load_start = LOADADDR(datas);
-    __data_region_load_start = LOADADDR(datas);
-        device_states : ALIGN_WITH_INPUT
-        {
-  . = ALIGN(4);
-                __device_states_start = .;
-  KEEP(*(".z_devstate"));
-  KEEP(*(".z_devstate.*"));
-                __device_states_end = .;
-  . = ALIGN(4);
-        } > RAM AT > FLASH
- log_mpsc_pbuf_area : ALIGN_WITH_INPUT { _log_mpsc_pbuf_list_start = .; *(SORT_BY_NAME(._log_mpsc_pbuf.static.*)); _log_mpsc_pbuf_list_end = .;; } > RAM AT > FLASH
- log_msg_ptr_area : ALIGN_WITH_INPUT { _log_msg_ptr_list_start = .; KEEP(*(SORT_BY_NAME(._log_msg_ptr.static.*))); _log_msg_ptr_list_end = .;; } > RAM AT > FLASH
- log_dynamic_area : ALIGN_WITH_INPUT { _log_dynamic_list_start = .; KEEP(*(SORT_BY_NAME(._log_dynamic.static.*))); _log_dynamic_list_end = .;; } > RAM AT > FLASH
- k_timer_area : ALIGN_WITH_INPUT { _k_timer_list_start = .; *(SORT_BY_NAME(._k_timer.static.*)); _k_timer_list_end = .;; } > RAM AT > FLASH
- k_mem_slab_area : ALIGN_WITH_INPUT { _k_mem_slab_list_start = .; *(SORT_BY_NAME(._k_mem_slab.static.*)); _k_mem_slab_list_end = .;; } > RAM AT > FLASH
- k_heap_area : ALIGN_WITH_INPUT { _k_heap_list_start = .; *(SORT_BY_NAME(._k_heap.static.*)); _k_heap_list_end = .;; } > RAM AT > FLASH
- k_mutex_area : ALIGN_WITH_INPUT { _k_mutex_list_start = .; *(SORT_BY_NAME(._k_mutex.static.*)); _k_mutex_list_end = .;; } > RAM AT > FLASH
- k_stack_area : ALIGN_WITH_INPUT { _k_stack_list_start = .; *(SORT_BY_NAME(._k_stack.static.*)); _k_stack_list_end = .;; } > RAM AT > FLASH
- k_msgq_area : ALIGN_WITH_INPUT { _k_msgq_list_start = .; *(SORT_BY_NAME(._k_msgq.static.*)); _k_msgq_list_end = .;; } > RAM AT > FLASH
- k_mbox_area : ALIGN_WITH_INPUT { _k_mbox_list_start = .; *(SORT_BY_NAME(._k_mbox.static.*)); _k_mbox_list_end = .;; } > RAM AT > FLASH
- k_pipe_area : ALIGN_WITH_INPUT { _k_pipe_list_start = .; *(SORT_BY_NAME(._k_pipe.static.*)); _k_pipe_list_end = .;; } > RAM AT > FLASH
- k_sem_area : ALIGN_WITH_INPUT { _k_sem_list_start = .; *(SORT_BY_NAME(._k_sem.static.*)); _k_sem_list_end = .;; } > RAM AT > FLASH
- k_event_area : ALIGN_WITH_INPUT { _k_event_list_start = .; *(SORT_BY_NAME(._k_event.static.*)); _k_event_list_end = .;; } > RAM AT > FLASH
- k_queue_area : ALIGN_WITH_INPUT { _k_queue_list_start = .; *(SORT_BY_NAME(._k_queue.static.*)); _k_queue_list_end = .;; } > RAM AT > FLASH
- k_fifo_area : ALIGN_WITH_INPUT { _k_fifo_list_start = .; *(SORT_BY_NAME(._k_fifo.static.*)); _k_fifo_list_end = .;; } > RAM AT > FLASH
- k_lifo_area : ALIGN_WITH_INPUT { _k_lifo_list_start = .; *(SORT_BY_NAME(._k_lifo.static.*)); _k_lifo_list_end = .;; } > RAM AT > FLASH
- k_condvar_area : ALIGN_WITH_INPUT { _k_condvar_list_start = .; *(SORT_BY_NAME(._k_condvar.static.*)); _k_condvar_list_end = .;; } > RAM AT > FLASH
- sys_mem_blocks_ptr_area : ALIGN_WITH_INPUT { _sys_mem_blocks_ptr_list_start = .; *(SORT_BY_NAME(._sys_mem_blocks_ptr.static.*)); _sys_mem_blocks_ptr_list_end = .;; } > RAM AT > FLASH
- net_buf_pool_area : ALIGN_WITH_INPUT { _net_buf_pool_list_start = .; KEEP(*(SORT_BY_NAME(._net_buf_pool.static.*))); _net_buf_pool_list_end = .;; } > RAM AT > FLASH
-    __data_region_end = .;
-.intList :
+ } > drom0_0_seg AT > FLASH
+ shell_area : ALIGN_WITH_INPUT { _shell_list_start = .; KEEP(*(SORT_BY_NAME(._shell.static.*))); _shell_list_end = .;; } > drom0_0_seg AT > FLASH
+ shell_root_cmds_area : ALIGN_WITH_INPUT { _shell_root_cmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_root_cmds.static.*))); _shell_root_cmds_list_end = .;; } > drom0_0_seg AT > FLASH
+ shell_subcmds_area : ALIGN_WITH_INPUT { _shell_subcmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_subcmds.static.*))); _shell_subcmds_list_end = .;; } > drom0_0_seg AT > FLASH
+ shell_dynamic_subcmds_area : ALIGN_WITH_INPUT { _shell_dynamic_subcmds_list_start = .; KEEP(*(SORT_BY_NAME(._shell_dynamic_subcmds.static.*))); _shell_dynamic_subcmds_list_end = .;; } > drom0_0_seg AT > FLASH
+ shell_remote_area : ALIGN_WITH_INPUT { _shell_remote_list_start = .; KEEP(*(SORT_BY_NAME(._shell_remote.static.*))); _shell_remote_list_end = .;; } > drom0_0_seg AT > FLASH
+ cfb_font_area : ALIGN_WITH_INPUT { _cfb_font_list_start = .; KEEP(*(SORT_BY_NAME(._cfb_font.static.*))); _cfb_font_list_end = .;; } > drom0_0_seg AT > FLASH
+.intList : ALIGN_WITH_INPUT
 {
  KEEP(*(.irq_info*))
  KEEP(*(.intList*))
-} > IDT_LIST
- .stab 0 : { *(.stab) }
- .stabstr 0 : { *(.stabstr) }
- .stab.excl 0 : { *(.stab.excl) }
- .stab.exclstr 0 : { *(.stab.exclstr) }
- .stab.index 0 : { *(.stab.index) }
- .stab.indexstr 0 : { *(.stab.indexstr) }
- .gnu.build.attributes 0 : { *(.gnu.build.attributes .gnu.build.attributes.*) }
- .comment 0 : { *(.comment) }
- .debug 0 : { *(.debug) }
- .line 0 : { *(.line) }
- .debug_srcinfo 0 : { *(.debug_srcinfo) }
- .debug_sfnames 0 : { *(.debug_sfnames) }
- .debug_aranges 0 : { *(.debug_aranges) }
- .debug_pubnames 0 : { *(.debug_pubnames) }
- .debug_info 0 : { *(.debug_info .gnu.linkonce.wi.*) }
- .debug_abbrev 0 : { *(.debug_abbrev) }
- .debug_line 0 : { *(.debug_line .debug_line.* .debug_line_end ) }
- .debug_frame 0 : { *(.debug_frame) }
- .debug_str 0 : { *(.debug_str) }
- .debug_loc 0 : { *(.debug_loc) }
- .debug_macinfo 0 : { *(.debug_macinfo) }
- .debug_weaknames 0 : { *(.debug_weaknames) }
- .debug_funcnames 0 : { *(.debug_funcnames) }
- .debug_typenames 0 : { *(.debug_typenames) }
- .debug_varnames 0 : { *(.debug_varnames) }
- .debug_pubtypes 0 : { *(.debug_pubtypes) }
- .debug_ranges 0 : { *(.debug_ranges) }
- .debug_addr 0 : { *(.debug_addr) }
- .debug_line_str 0 : { *(.debug_line_str) }
- .debug_loclists 0 : { *(.debug_loclists) }
- .debug_macro 0 : { *(.debug_macro) }
- .debug_names 0 : { *(.debug_names) }
- .debug_rnglists 0 : { *(.debug_rnglists) }
- .debug_str_offsets 0 : { *(.debug_str_offsets) }
- .debug_sup 0 : { *(.debug_sup) }
-    /DISCARD/ : { *(.note.GNU-stack) }
-    .ARM.attributes 0 :
- {
- KEEP(*(.ARM.attributes))
- KEEP(*(.gnu.attributes))
- }
-    SRAM0 (NOLOAD) : { __SRAM0_start = .; KEEP(*(SRAM0)) KEEP(*(SRAM0.*)) __SRAM0_end = .; } > SRAM0 __SRAM0_size = __SRAM0_end - __SRAM0_start; __SRAM0_load_start = LOADADDR(SRAM0);
-.last_section :
+} > drom0_0_seg AT > IDT_LIST
+  .flash.rodata_end : ALIGN(0x10)
+  {
+    LONG(0);
+    _rodata_reserved_end = ABSOLUTE(.);
+    _image_rodata_end = ABSOLUTE(.);
+  } > drom0_0_seg AT > FLASH
+.intList : ALIGN_WITH_INPUT
 {
-  KEEP(*(.last_section))
-} > FLASH
-_flash_used = LOADADDR(.last_section) + SIZEOF(.last_section) - __rom_region_start;
-    bss (NOLOAD) : ALIGN_WITH_INPUT
- {
-        . = ALIGN(4);
- __bss_start = .;
- __kernel_ram_start = .;
- *(.bss)
- *(".bss.*")
- *(COMMON)
- *(".kernel_bss.*")
- __bss_end = ALIGN(4);
- } > RAM AT > RAM
-noinit (NOLOAD) :
-{
-        *(.noinit)
-        *(".noinit.*")
-} > RAM AT > RAM
-    __kernel_ram_end = (536870912) + (20480);
-    __kernel_ram_size = __kernel_ram_end - __kernel_ram_start;
-    .last_ram_section (NOLOAD) :
-    {
- _image_ram_end = .;
- _image_ram_size = _image_ram_end - _image_ram_start;
- _end = .;
- z_mapped_end = .;
-    } > RAM AT > RAM
-   
-    }
+ KEEP(*(.irq_info*))
+ KEEP(*(.intList*))
+} > drom0_0_seg AT > IDT_LIST
+ .stab 0 : ALIGN_WITH_INPUT { *(.stab) }
+ .stabstr 0 : ALIGN_WITH_INPUT { *(.stabstr) }
+ .stab.excl 0 : ALIGN_WITH_INPUT { *(.stab.excl) }
+ .stab.exclstr 0 : ALIGN_WITH_INPUT { *(.stab.exclstr) }
+ .stab.index 0 : ALIGN_WITH_INPUT { *(.stab.index) }
+ .stab.indexstr 0 : ALIGN_WITH_INPUT { *(.stab.indexstr) }
+ .gnu.build.attributes 0 : ALIGN_WITH_INPUT { *(.gnu.build.attributes .gnu.build.attributes.*) }
+ .comment 0 : ALIGN_WITH_INPUT { *(.comment) }
+ .debug 0 : ALIGN_WITH_INPUT { *(.debug) }
+ .line 0 : ALIGN_WITH_INPUT { *(.line) }
+ .debug_srcinfo 0 : ALIGN_WITH_INPUT { *(.debug_srcinfo) }
+ .debug_sfnames 0 : ALIGN_WITH_INPUT { *(.debug_sfnames) }
+ .debug_aranges 0 : ALIGN_WITH_INPUT { *(.debug_aranges) }
+ .debug_pubnames 0 : ALIGN_WITH_INPUT { *(.debug_pubnames) }
+ .debug_info 0 : ALIGN_WITH_INPUT { *(.debug_info .gnu.linkonce.wi.*) }
+ .debug_abbrev 0 : ALIGN_WITH_INPUT { *(.debug_abbrev) }
+ .debug_line 0 : ALIGN_WITH_INPUT { *(.debug_line .debug_line.* .debug_line_end ) }
+ .debug_frame 0 : ALIGN_WITH_INPUT { *(.debug_frame) }
+ .debug_str 0 : ALIGN_WITH_INPUT { *(.debug_str) }
+ .debug_loc 0 : ALIGN_WITH_INPUT { *(.debug_loc) }
+ .debug_macinfo 0 : ALIGN_WITH_INPUT { *(.debug_macinfo) }
+ .debug_weaknames 0 : ALIGN_WITH_INPUT { *(.debug_weaknames) }
+ .debug_funcnames 0 : ALIGN_WITH_INPUT { *(.debug_funcnames) }
+ .debug_typenames 0 : ALIGN_WITH_INPUT { *(.debug_typenames) }
+ .debug_varnames 0 : ALIGN_WITH_INPUT { *(.debug_varnames) }
+ .debug_pubtypes 0 : ALIGN_WITH_INPUT { *(.debug_pubtypes) }
+ .debug_ranges 0 : ALIGN_WITH_INPUT { *(.debug_ranges) }
+ .debug_addr 0 : ALIGN_WITH_INPUT { *(.debug_addr) }
+ .debug_line_str 0 : ALIGN_WITH_INPUT { *(.debug_line_str) }
+ .debug_loclists 0 : ALIGN_WITH_INPUT { *(.debug_loclists) }
+ .debug_macro 0 : ALIGN_WITH_INPUT { *(.debug_macro) }
+ .debug_names 0 : ALIGN_WITH_INPUT { *(.debug_names) }
+ .debug_rnglists 0 : ALIGN_WITH_INPUT { *(.debug_rnglists) }
+ .debug_str_offsets 0 : ALIGN_WITH_INPUT { *(.debug_str_offsets) }
+ .debug_sup 0 : ALIGN_WITH_INPUT { *(.debug_sup) }
+  .xtensa.info 0 : { *(.xtensa.info) }
+  .xt.insn 0 :
+  {
+    KEEP (*(.xt.insn))
+    KEEP (*(.gnu.linkonce.x.*))
+  }
+  .xt.prop 0 :
+  {
+    KEEP (*(.xt.prop))
+    KEEP (*(.xt.prop.*))
+    KEEP (*(.gnu.linkonce.prop.*))
+  }
+  .xt.lit 0 :
+  {
+    KEEP (*(.xt.lit))
+    KEEP (*(.xt.lit.*))
+    KEEP (*(.gnu.linkonce.p.*))
+  }
+  .xt.profile_range 0 :
+  {
+    KEEP (*(.xt.profile_range))
+    KEEP (*(.gnu.linkonce.profile_range.*))
+  }
+  .xt.profile_ranges 0 :
+  {
+    KEEP (*(.xt.profile_ranges))
+    KEEP (*(.gnu.linkonce.xt.profile_ranges.*))
+  }
+  .xt.profile_files 0 :
+  {
+    KEEP (*(.xt.profile_files))
+    KEEP (*(.gnu.linkonce.xt.profile_files.*))
+  }
+}
+ASSERT(((_iram_end - ORIGIN(iram0_0_seg)) <= LENGTH(iram0_0_seg)),
+          "IRAM0 segment data does not fit.")
+ASSERT(((_end - ORIGIN(dram0_0_seg)) <= LENGTH(dram0_0_seg)),
+          "DRAM segment data does not fit.")

@@ -923,10 +923,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -967,10 +967,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcov"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcov"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1011,10 +1011,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-g++"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-g++"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1055,10 +1055,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objcopy"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objcopy"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1099,10 +1099,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objdump"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objdump"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1143,10 +1143,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-as"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-as"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1187,10 +1187,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ar"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ar"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1231,10 +1231,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ranlib"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ranlib"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1275,10 +1275,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-readelf"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-readelf"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1319,10 +1319,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-nm"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-nm"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1363,10 +1363,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-strip"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-strip"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1407,10 +1407,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb-py"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb-py"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1451,10 +1451,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb"
     candidate_directories:
       - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1549,7 +1549,7 @@ events:
       - "/home/khaiwic/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:83 (include_boilerplate)"
       - "CMakeLists.txt:4 (find_package)"
     message: |
-      The target system is: Generic - 4.4.99 - arm
+      The target system is: Generic - 4.4.99 - xtensa
       The host system is: Linux - 7.0.0-31-generic - x86_64
   -
     kind: "find-v1"
@@ -1697,7 +1697,7 @@ events:
       - "CMakeLists.txt:4 (find_package)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Compiler: /home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc 
       Build flags: 
       Id flags:  
       
@@ -1732,10 +1732,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-dlltool"
+      - "xtensa-espressif_esp32s3_zephyr-elf-dlltool"
       - "dlltool"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -1749,20 +1749,20 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-dlltool"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-dlltool"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-dlltool"
-      - "/usr/local/sbin/arm-zephyr-eabi-dlltool"
-      - "/usr/local/bin/arm-zephyr-eabi-dlltool"
-      - "/usr/sbin/arm-zephyr-eabi-dlltool"
-      - "/usr/bin/arm-zephyr-eabi-dlltool"
-      - "/sbin/arm-zephyr-eabi-dlltool"
-      - "/bin/arm-zephyr-eabi-dlltool"
-      - "/usr/games/arm-zephyr-eabi-dlltool"
-      - "/usr/local/games/arm-zephyr-eabi-dlltool"
-      - "/snap/bin/arm-zephyr-eabi-dlltool"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-dlltool"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/dlltool"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-dlltool"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/dlltool"
       - "/home/khaiwic/zephyrproject/.venv/bin/dlltool"
       - "/home/khaiwic/.local/bin/dlltool"
       - "/usr/local/sbin/dlltool"
@@ -1816,10 +1816,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-addr2line"
+      - "xtensa-espressif_esp32s3_zephyr-elf-addr2line"
       - "addr2line"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -1832,7 +1832,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-addr2line"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-addr2line"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -1873,10 +1873,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-tapi"
+      - "xtensa-espressif_esp32s3_zephyr-elf-tapi"
       - "tapi"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -1890,20 +1890,20 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-tapi"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-tapi"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-tapi"
-      - "/usr/local/sbin/arm-zephyr-eabi-tapi"
-      - "/usr/local/bin/arm-zephyr-eabi-tapi"
-      - "/usr/sbin/arm-zephyr-eabi-tapi"
-      - "/usr/bin/arm-zephyr-eabi-tapi"
-      - "/sbin/arm-zephyr-eabi-tapi"
-      - "/bin/arm-zephyr-eabi-tapi"
-      - "/usr/games/arm-zephyr-eabi-tapi"
-      - "/usr/local/games/arm-zephyr-eabi-tapi"
-      - "/snap/bin/arm-zephyr-eabi-tapi"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-tapi"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/tapi"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-tapi"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/tapi"
       - "/home/khaiwic/zephyrproject/.venv/bin/tapi"
       - "/home/khaiwic/.local/bin/tapi"
       - "/usr/local/sbin/tapi"
@@ -1957,12 +1957,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ar-14.3"
-      - "arm-zephyr-eabi-gcc-ar-14"
-      - "arm-zephyr-eabi-gcc-ar14"
-      - "arm-zephyr-eabi-gcc-ar"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -1976,46 +1976,46 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar14"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2056,12 +2056,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "arm-zephyr-eabi-gcc-ranlib-14"
-      - "arm-zephyr-eabi-gcc-ranlib14"
-      - "arm-zephyr-eabi-gcc-ranlib"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -2075,46 +2075,46 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib14"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2194,7 +2194,7 @@ events:
       - "CMakeLists.txt:4 (find_package)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Compiler: /home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-g++ 
       Build flags: 
       Id flags:  
       
@@ -2229,12 +2229,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ar-14.3"
-      - "arm-zephyr-eabi-gcc-ar-14"
-      - "arm-zephyr-eabi-gcc-ar14"
-      - "arm-zephyr-eabi-gcc-ar"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -2248,46 +2248,46 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-14.3"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-14"
-      - "/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-14"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/sbin/arm-zephyr-eabi-gcc-ar14"
-      - "/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar14"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14.3"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-14"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar14"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2328,12 +2328,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "arm-zephyr-eabi-gcc-ranlib-14"
-      - "arm-zephyr-eabi-gcc-ranlib14"
-      - "arm-zephyr-eabi-gcc-ranlib"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -2347,46 +2347,46 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-14.3"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-14"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib14"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib14"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib14"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib14"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14.3"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-14"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib14"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2427,10 +2427,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2464,7 +2464,7 @@ events:
       - "CMakeLists.txt:4 (find_package)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      arm-zephyr-eabi-gcc (Zephyr SDK 1.0.1) 14.3.0
+      xtensa-espressif_esp32s3_zephyr-elf-gcc (Zephyr SDK 1.0.1) 14.3.0
       Copyright (C) 2024 Free Software Foundation, Inc.
       This is free software; see the source for copying conditions.  There is NO
       warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -2491,12 +2491,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ar-"
-      - "arm-zephyr-eabi-gcc-ar-"
-      - "arm-zephyr-eabi-gcc-ar"
-      - "arm-zephyr-eabi-gcc-ar"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -2510,33 +2510,33 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/sbin/arm-zephyr-eabi-gcc-ar-"
-      - "/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/games/arm-zephyr-eabi-gcc-ar-"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ar-"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ar-"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ar-"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar-"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
@@ -2580,12 +2580,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-zephyr-eabi-gcc-ranlib-"
-      - "arm-zephyr-eabi-gcc-ranlib-"
-      - "arm-zephyr-eabi-gcc-ranlib"
-      - "arm-zephyr-eabi-gcc-ranlib"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
+      - "xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
     candidate_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/"
       - "/home/khaiwic/zephyrproject/.venv/bin/"
       - "/home/khaiwic/.local/bin/"
       - "/usr/local/sbin/"
@@ -2599,33 +2599,92 @@ events:
       - "/snap/bin/"
       - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
     searched_directories:
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/zephyrproject/.venv/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/.local/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/games/arm-zephyr-eabi-gcc-ranlib-"
-      - "/usr/local/games/arm-zephyr-eabi-gcc-ranlib-"
-      - "/snap/bin/arm-zephyr-eabi-gcc-ranlib-"
-      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/arm-zephyr-eabi-gcc-ranlib-"
-    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/zephyrproject/.venv/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/.local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/sbin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/usr/local/games/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/snap/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib-"
+    found: "/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/home/khaiwic/zephyrproject/.venv/bin"
+        - "/home/khaiwic/.local/bin"
+        - "/home/khaiwic/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/khaiwic/altera_lite/25.1std/quartus/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/CMakeLists.txt:5 (find_program)"
+    mode: "program"
+    variable: "ESPTOOL_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "esptool"
+    candidate_directories:
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/home/khaiwic/zephyrproject/.venv/bin/"
+      - "/home/khaiwic/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/khaiwic/altera_lite/25.1std/quartus/bin/"
+    searched_directories:
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/esptool"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/sbin/esptool"
+      - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/esptool"
+    found: "/home/khaiwic/zephyrproject/.venv/bin/esptool"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"

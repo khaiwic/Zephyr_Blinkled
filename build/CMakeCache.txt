@@ -24,10 +24,10 @@ APPLICATION_CONFIG_DIR:PATH=/home/khaiwic/Zephyr_Prj/Blink_led
 APPLICATION_SOURCE_DIR:PATH=/home/khaiwic/Zephyr_Prj/Blink_led
 
 //Selected board
-BOARD:STRING=stm32_min_dev@blue
+BOARD:STRING=esp32s3_devkitc/esp32s3/procpu
 
-//Main board directory for board (stm32_min_dev)
-BOARD_DIR:PATH=/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev
+//Main board directory for board (esp32s3_devkitc)
+BOARD_DIR:PATH=/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc
 
 //Path to a program.
 BOSSAC:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/bossac
@@ -38,11 +38,8 @@ BYPRODUCT_KERNEL_BIN_NAME:FILEPATH=/home/khaiwic/Zephyr_Prj/Blink_led/build/zeph
 //Kernel elf file
 BYPRODUCT_KERNEL_ELF_NAME:FILEPATH=/home/khaiwic/Zephyr_Prj/Blink_led/build/zephyr/zephyr.elf
 
-//Kernel hex file
-BYPRODUCT_KERNEL_HEX_NAME:FILEPATH=/home/khaiwic/Zephyr_Prj/Blink_led/build/zephyr/zephyr.hex
-
 //Selected board
-CACHED_BOARD:STRING=stm32_min_dev@blue
+CACHED_BOARD:STRING=esp32s3_devkitc/esp32s3/procpu
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -57,24 +54,24 @@ CCACHE:FILEPATH=/usr/bin/ccache
 CCACHE_PROGRAM:FILEPATH=/usr/bin/ccache
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-addr2line
+CMAKE_ADDR2LINE:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar
+CMAKE_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ar
 
 //Path to a program.
-CMAKE_AS:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-as
+CMAKE_AS:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-as
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMAKE_ASM_COMPILER:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar
+CMAKE_ASM_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -96,15 +93,15 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++
+CMAKE_CXX_COMPILER:STRING=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -122,15 +119,15 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+CMAKE_C_COMPILER:STRING=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcc-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -176,13 +173,13 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/khaiwic/Zephyr_Prj/Blink_led/build/CMakeFiles/pkgRedirects
 
 //Path to a program.
-CMAKE_GCOV:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov
+CMAKE_GCOV:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gcov
 
 //Path to a program.
-CMAKE_GDB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+CMAKE_GDB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb
 
 //Path to a program.
-CMAKE_GDB_NO_PY:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+CMAKE_GDB_NO_PY:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-gdb
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -211,13 +208,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm
+CMAKE_NM:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy
+CMAKE_OBJCOPY:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump
+CMAKE_OBJDUMP:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -250,10 +247,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=99
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib
+CMAKE_RANLIB:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf
+CMAKE_READELF:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -303,7 +300,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip
+CMAKE_STRIP:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/bin/xtensa-espressif_esp32s3_zephyr-elf-strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
@@ -331,7 +328,10 @@ DTC:FILEPATH=/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-li
 // parameter. These settings will override the settings in the
 // board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
 // dts2.overlay"
-DTC_OVERLAY_FILE:STRING=/home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay
+DTC_OVERLAY_FILE:STRING=/home/khaiwic/Zephyr_Prj/Blink_led/boards/esp32s3_devkitc_esp32s3_procpu.overlay
+
+//Path to a program.
+ESPTOOL_EXECUTABLE:FILEPATH=/home/khaiwic/zephyrproject/.venv/bin/esptool
 
 //Path to a program.
 GEN_KOBJECT_LIST:FILEPATH=/home/khaiwic/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
@@ -370,7 +370,7 @@ Picolibc_IS_TOP_LEVEL:STATIC=OFF
 Picolibc_SOURCE_DIR:STATIC=/home/khaiwic/zephyrproject/modules/lib/picolibc
 
 //Path to the SoC directory.
-SOC_FULL_DIR:PATH=/home/khaiwic/zephyrproject/zephyr/soc/st/stm32
+SOC_FULL_DIR:PATH=/home/khaiwic/zephyrproject/zephyr/soc/espressif
 
 //True if toolchain supports libstdc++
 TOOLCHAIN_HAS_GLIBCXX:BOOL=ON
@@ -446,8 +446,8 @@ Zephyr_DIR:PATH=/home/khaiwic/zephyrproject/zephyr/share/zephyr-package/cmake
 # INTERNAL cache entries
 ########################
 
-//List of board directories for board (stm32_min_dev)
-BOARD_DIRECTORIES:INTERNAL=/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev
+//List of board directories for board (esp32s3_devkitc)
+BOARD_DIRECTORIES:INTERNAL=/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=/home/khaiwic/zephyrproject/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -563,7 +563,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=157
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=156
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -613,7 +613,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Ccache:INTERNAL=[/usr/bin/ccache][v4.12.3(4.12)]
 //Details about finding Dtc
 FIND_PACKAGE_MESSAGE_DETAILS_Dtc:INTERNAL=[/home/khaiwic/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc][v1.7.0(1.4.6)]
 //Details about finding GnuLd
-FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/home/khaiwic/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd][v2.43.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[/home/khaiwic/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32s3_zephyr-elf/xtensa-espressif_esp32s3_zephyr-elf/bin/ld.bfd][v2.43.1()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/khaiwic/zephyrproject/.venv/bin/python3][found components: Interpreter ][v3.14.4(3.12)]
 //Zephyr hardware model version
@@ -621,9 +621,9 @@ HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
 KERNEL_META_PATH:INTERNAL=/home/khaiwic/Zephyr_Prj/Blink_led/build/zephyr/zephyr.meta
-//List of SoC directories for SoC (stm32f103x8)
-SOC_DIRECTORIES:INTERNAL=/home/khaiwic/zephyrproject/zephyr/soc/st/stm32
-SOC_LINKER_SCRIPT:INTERNAL=/home/khaiwic/zephyrproject/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld
+//List of SoC directories for SoC (esp32s3)
+SOC_DIRECTORIES:INTERNAL=/home/khaiwic/zephyrproject/zephyr/soc/espressif
+SOC_LINKER_SCRIPT:INTERNAL=/home/khaiwic/zephyrproject/zephyr/soc/espressif/common/../esp32s3/default.ld
 //West
 WEST:INTERNAL=/home/khaiwic/zephyrproject/.venv/bin/python3;-m;west
 ZEPHYR_SHARED_TARGETS:INTERNAL=menuconfig;guiconfig;hardenconfig;traceconfig

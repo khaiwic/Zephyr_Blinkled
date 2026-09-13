@@ -3,18 +3,17 @@ cmake:
     configuration-dir: '/home/khaiwic/Zephyr_Prj/Blink_led'
     source-dir: '/home/khaiwic/Zephyr_Prj/Blink_led'
   board:
-    name: 'stm32_min_dev'
+    name: 'esp32s3_devkitc'
     path:
-     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev'
-    qualifiers: 'stm32f103x8'
-    revision: 'blue'
+     - '/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc'
+    qualifiers: 'esp32s3/procpu'
+    revision: ''
   devicetree:
     bindings-dirs:
      - '/home/khaiwic/zephyrproject/zephyr/dts/bindings'
     files:
-     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev.dts'
-     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_stm32f103x8_blue.overlay'
-     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay'
+     - '/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu.dts'
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/esp32s3_devkitc_esp32s3_procpu.overlay'
     include-dirs:
      - '/home/khaiwic/zephyrproject/modules/hal/ambiq/dts'
      - '/home/khaiwic/zephyrproject/modules/hal/atmel/include'
@@ -44,10 +43,10 @@ cmake:
      - '/home/khaiwic/zephyrproject/zephyr/dts/arc'
      - '/home/khaiwic/zephyrproject/zephyr/dts'
     user-files:
-     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/stm32_min_dev_blue.overlay'
+     - '/home/khaiwic/Zephyr_Prj/Blink_led/boards/esp32s3_devkitc_esp32s3_procpu.overlay'
   kconfig:
     files:
-     - '/home/khaiwic/zephyrproject/zephyr/boards/others/stm32_min_dev/stm32_min_dev_defconfig'
+     - '/home/khaiwic/zephyrproject/zephyr/boards/espressif/esp32s3_devkitc/esp32s3_devkitc_procpu_defconfig'
      - '/home/khaiwic/Zephyr_Prj/Blink_led/prj.conf'
     user-files:
      - '/home/khaiwic/Zephyr_Prj/Blink_led/prj.conf'
@@ -59,6 +58,6 @@ cmake:
     zephyr-base: '/home/khaiwic/zephyrproject/zephyr'
 version: '0.1.0'
 west:
-  command: '/home/khaiwic/zephyrproject/.venv/bin/west build -p always -b stm32_min_dev@blue'
+  command: '/home/khaiwic/zephyrproject/.venv/bin/west build -p always -b esp32s3_devkitc/esp32s3/procpu'
   topdir: '/home/khaiwic/zephyrproject'
   version: '1.5.0'

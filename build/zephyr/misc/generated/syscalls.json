@@ -1,6 +1,14 @@
 [
     [
         [
+            "void xtensa_user_fault",
+            "unsigned int reason"
+        ],
+        "arch.h",
+        true
+    ],
+    [
+        [
             "int zephyr_read_stdin",
             "char *buf, int nbytes"
         ],
@@ -29,6 +37,14 @@
             "const void *ZRESTRICT ptr, size_t size, size_t nitems, FILE *ZRESTRICT stream"
         ],
         "libc-hooks.h",
+        true
+    ],
+    [
+        [
+            "int *z_errno",
+            "void"
+        ],
+        "errno_private.h",
         true
     ],
     [
@@ -141,6 +157,30 @@
             "int16_t source_id, uint32_t level"
         ],
         "log_ctrl.h",
+        true
+    ],
+    [
+        [
+            "int sys_cache_data_flush_range",
+            "void *addr, size_t size"
+        ],
+        "cache.h",
+        true
+    ],
+    [
+        [
+            "int sys_cache_data_invd_range",
+            "void *addr, size_t size"
+        ],
+        "cache.h",
+        true
+    ],
+    [
+        [
+            "int sys_cache_data_flush_and_invd_range",
+            "void *addr, size_t size"
+        ],
+        "cache.h",
         true
     ],
     [
@@ -309,38 +349,6 @@
             "const struct device *dev"
         ],
         "gpio.h",
-        true
-    ],
-    [
-        [
-            "int reset_status",
-            "const struct device *dev, uint32_t id, uint8_t *status"
-        ],
-        "reset.h",
-        true
-    ],
-    [
-        [
-            "int reset_line_assert",
-            "const struct device *dev, uint32_t id"
-        ],
-        "reset.h",
-        true
-    ],
-    [
-        [
-            "int reset_line_deassert",
-            "const struct device *dev, uint32_t id"
-        ],
-        "reset.h",
-        true
-    ],
-    [
-        [
-            "int reset_line_toggle",
-            "const struct device *dev, uint32_t id"
-        ],
-        "reset.h",
         true
     ],
     [
@@ -1361,42 +1369,10 @@
     ],
     [
         [
-            "int sys_cache_data_flush_range",
-            "void *addr, size_t size"
-        ],
-        "cache.h",
-        false
-    ],
-    [
-        [
-            "int sys_cache_data_invd_range",
-            "void *addr, size_t size"
-        ],
-        "cache.h",
-        false
-    ],
-    [
-        [
-            "int sys_cache_data_flush_and_invd_range",
-            "void *addr, size_t size"
-        ],
-        "cache.h",
-        false
-    ],
-    [
-        [
             "void user_fault",
             "unsigned int reason"
         ],
         "error.h",
-        false
-    ],
-    [
-        [
-            "void xtensa_user_fault",
-            "unsigned int reason"
-        ],
-        "arch.h",
         false
     ],
     [
@@ -3713,6 +3689,38 @@
     ],
     [
         [
+            "int reset_status",
+            "const struct device *dev, uint32_t id, uint8_t *status"
+        ],
+        "reset.h",
+        false
+    ],
+    [
+        [
+            "int reset_line_assert",
+            "const struct device *dev, uint32_t id"
+        ],
+        "reset.h",
+        false
+    ],
+    [
+        [
+            "int reset_line_deassert",
+            "const struct device *dev, uint32_t id"
+        ],
+        "reset.h",
+        false
+    ],
+    [
+        [
+            "int reset_line_toggle",
+            "const struct device *dev, uint32_t id"
+        ],
+        "reset.h",
+        false
+    ],
+    [
+        [
             "ssize_t retained_mem_size",
             "const struct device *dev"
         ],
@@ -5421,14 +5429,6 @@
             "atomic_t *target, atomic_val_t value"
         ],
         "atomic_c.h",
-        false
-    ],
-    [
-        [
-            "int *z_errno",
-            "void"
-        ],
-        "errno_private.h",
         false
     ],
     [
